@@ -1,0 +1,18 @@
+.shop__card {
+    display: flex;
+    height: 360px;
+    background-color:  #F3F4F6;
+    margin: 80px 55px;
+}
+.shop__card_text {
+    padding-top: 90px;
+    padding-left: 95px;
+    padding-bottom: 90px;
+}
+
+.line {
+    width: 1280px;
+    opacity: 0.3;
+   border: 1px solid #156963;
+   margin-bottom: 60px;
+}
