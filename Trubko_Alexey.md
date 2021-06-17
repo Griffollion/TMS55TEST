@@ -1,1 +1,0 @@
-Trubko_Alexey.
