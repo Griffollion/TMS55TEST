@@ -1,8 +1,10 @@
-Создать файлик index.html
+В папке solutions создать папку homework2
+
+В папке homework2 создать файлик index.html
 
 В нем сгенерить базовый HTML код (! + tab)
 
-Создать файл app.js и подключить его в index.html
+Здесь же создать файл app.js и подключить его в index.html
 
 В app.js нужно создать 8 переменных при помощи ключевых слов var let и const
 
