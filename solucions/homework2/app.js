@@ -7,7 +7,6 @@ let symbol = Symbol('zzz')
 const number = 1932472493248n
 const Matvei = {}
 
-
 console.log(car)
 console.log(typeof car)
 console.log(belief)
