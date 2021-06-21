@@ -1,16 +1,16 @@
-let PersoneName = 'Andrey'
+let personeName = 'Andrey'
 
-const PersoneAge = 12
+const personeAge = 12
 
-var PersoneHeight = undefined
+var personeHeight = undefined
 
-let PersoneSomething = null
+let personeSomething = null
 
 let isMoodGood = true
 
-let PersoneSymbol = Symbol('GhostRaven')    
+let personeSymbol = Symbol('GhostRaven')    
 
-const PersoneNumber = 123124821331031932193
+const personeNumber = 123124821331031932193
 
 let obj = {   
   name: 'Afonya',
@@ -19,12 +19,12 @@ let obj = {
   age: 3
 }
 
-console.log( typeof PersoneName)
-console.log( typeof PersoneAge)
-console.log( typeof PersoneHeight)
-console.log( typeof PersoneSomething)
-console.log( typeof isMoodGood)
-console.log( typeof PersoneSymbol)
-console.log( typeof PersoneNumber)
-console.log( typeof obj)
+console.log( personeName, typeof personeName)
+console.log( personeAge, typeof personeAge)
+console.log( personeHeight, typeof personeHeight)
+console.log( personeSomething, typeof personeSomething)
+console.log( isMoodGood, typeof isMoodGood)
+console.log( personeSymbol, typeof personeSymbol)
+console.log( personeNumber, typeof personeNumber)
+console.log( obj, typeof obj)
 
