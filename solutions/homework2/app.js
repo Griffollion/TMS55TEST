@@ -2,38 +2,38 @@ let nothing;
 console.log(nothing);
 console.log(typeof nothing);
 
-let HowManyCarsIhave = null;
-console.log(HowManyCarsIhave);
-console.log(typeof HowManyCarsIhave);
+let howManyCarsIhave = null;
+console.log(howManyCarsIhave);
+console.log(typeof howManyCarsIhave);
 
-let User = 'Artyom';
-console.log(User);
-console.log(typeof User);
+let user = 'Artyom';
+console.log(user);
+console.log(typeof user);
 
-let Age = 29;
-Age = 30;
-Age = String(Age);
-console.log(Age);
-console.log(typeof Age);
+let age = 29;
+age = 30;
+age = String(age);
+console.log(age);
+console.log(typeof age);
 
-const BirthDate = '26 of July';
-console.log(BirthDate);
-console.log(typeof BirthDate);
+const birthDate = '26 of July';
+console.log(birthDate);
+console.log(typeof birthDate);
 
-let CanIGoSleeping = false;
-    if (CanIGoSleeping) {
+let canIGoSleeping = false;
+    if (canIGoSleeping) {
         console.log('Yes')
     }
     else {
         console.log('Nope')
     }
-console.log(typeof CanIGoSleeping)
+console.log(typeof canIGoSleeping)
 
-let TheBigNumber = 9999234567894561234569999999999999999999999999999789n;
-console.log(TheBigNumber);
-console.log(typeof TheBigNumber);
+let theBigNumber = 9999234567894561234569999999999999999999999999999789n;
+console.log(theBigNumber);
+console.log(typeof theBigNumber);
 
-let SymA = Symbol();
-let SymB = Symbol();
-console.log(SymA === SymB);
-console.log(typeof SymA);
+let symA = Symbol();
+let symB = Symbol();
+console.log(symA === symB);
+console.log(typeof symA);
