@@ -2,14 +2,14 @@
 var userName ='Alexey';
 alert(typeof 'userName');
 
-const myCity = 'Minsk';
-alert(typeof myCity);
+const userCity = 'Minsk';
+alert(typeof userCity);
 
 var age = 28;
 alert(typeof age);
 
-let myHeight = 1.8;
-alert(typeof myHeight);
+let userHeight = 1.8;
+alert(typeof userHeight);
 
 
 const isMale = true
@@ -40,7 +40,7 @@ console.log(typeof 'isMale')
 console.log(isMale)
 
 console.log(typeof 'myCity')
-console.log(myCity);
+console.log(userCity);
 
 console.log(typeof 'bigInt');
 console.log(bigInt)
