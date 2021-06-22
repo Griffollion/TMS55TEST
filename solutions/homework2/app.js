@@ -30,16 +30,16 @@ let iq = Symbol("iq");
 alert(typeof iq);
 console.log(typeof iq);
 
-console.log(typeof 'userName')
-console.log(userName)
+console.log(typeof 'userName');
+console.log(userName);
 
-console.log(typeof 'age')
-console.log(age)
+console.log(typeof 'age');
+console.log(age);
 
-console.log(typeof 'isMale')
-console.log(isMale)
+console.log(typeof 'isMale');
+console.log(isMale);
 
-console.log(typeof 'myCity')
+console.log(typeof 'userCity');
 console.log(userCity);
 
 console.log(typeof 'bigInt');
