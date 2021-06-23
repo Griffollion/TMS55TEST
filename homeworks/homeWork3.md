@@ -1,7 +1,7 @@
 ### 
 - В папке solutions создать папку homework3
 
-- В папке homework2 создать файлик index.html
+- В папке homework3 создать файлик index.html
 
 - В нем сгенерить базовый HTML код (! + tab)
 
