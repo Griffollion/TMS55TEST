@@ -1,98 +1,98 @@
 // Задание №1
 
-let a_1 = 1
-let b_1 = 2
-let c_1 = " белых медведей"
+let a1 = 1
+let b1 = 2
+let c1 = " белых медведей"
 
-let resualt_1 = String(a_1) + String(b_1) + c_1
+let resualt1 = a1 + b1 + c1
 
-console.log ('Ответ на задание №1: ', resualt_1)
+console.log ('Ответ на задание №1: ', resualt1)
 
 // Задание №2
 console.log(' ') //разделитель для заданий в консоли
-const a_2 = 10
-const b_2 = 2
-const c_2 = 5
+const a2 = 10
+const b2 = 2
+const c2 = 5
 
-const sum_2 = a_2 + b_2 + c_2
-console.log ('Ответ на задание №2: ',sum_2)
-document.write('Ответ на задание №2: ',sum_2)
+const sum2 = a2 + b2 + c2
+console.log ('Ответ на задание №2: ',sum2)
+document.write('Ответ на задание №2: ',sum2)
 
 // Задание №3
 
-let num_3 = 10;
-num_3 = ++num_3;
-num_3 = ++num_3;
-num_3 = --num_3;
-alert('Ответ на задание №3: '+ num_3);
+let num3 = 10;
+++num3
+++num3
+--num3
+alert('Ответ на задание №3: '+ num3);
 
 //Задание №4
 console.log(' ')
-let a_4 = 10
-let b_4 = 35
-let c_4 = 76
-let d_4 = -18
-let f_4 = 1
+let a4 = 10
+let b4 = 35
+let c4 = 76
+let d4 = -18
+let f4 = 1
 
-let min = a_4
+let min = a4
 
-if (min > b_4)
+if (min > b4)
 {
- min = b_4
+ min = b4
 }
 
 
-if (min > c_4)
+if (min > c4)
 {
- min = c_4
+ min = c4
 }
 
 
-if (min > d_4)
+if (min > d4)
 {
- min = d_4
+ min = d4
 }
 
 
-if (min > f_4)
+if (min > f4)
 {
- min = f_4
+ min = f4
 }
 
 
-console.log ('Ответ на задание №4. Минимальное число из',a_4,', ',b_4,', ',c_4,', ',d_4,', ',f_4, ': ',min)
+console.log ('Ответ на задание №4. Минимальное число из',a4,', ',b4,', ',c4,', ',d4,', ',f4, ': ',min)
 
 
 //Задание №5
 
 console.log(' ') //разделитель для заданий в консоли
 
-let a6_5 = 5 % 3
-let a7_5 = 3 % 5
-let a8_5 = 5 + '3'
-let a9_5 = '5' - 3
-let a10_5 = 75 + 'кг'
+let a65 = 5 % 3
+let a75 = 3 % 5
+let a85 = 5 + '3'
+let a95 = '5' - 3
+let a105 = 75 + 'кг'
 console.log('Ответ на задание №5:')
-console.log('a6 = ', a6_5)
-console.log('a7 = ', a7_5)
-console.log('a8 = ', a8_5)
-console.log('a9 = ', a9_5)
-console.log('a10 = ', a10_5)
+console.log('a6 = ', a65)
+console.log('a7 = ', a75)
+console.log('a8 = ', a85)
+console.log('a9 = ', a95)
+console.log('a10 = ', a105)
 
 //Задание №6
 console.log(' ')
 
-let a_6 = 37
-let b_6 = 97
+let a6 = 37
+let b6 = 97
 
-let resualt_6 = Math.min (a_6,b_6);
+let resualt6 = Math.min (a6,b6);
 
-console.log('Ответ на задание №6: наименьшее значание из чисел ', 37,'и ', 97,' = ', resualt_6)
+console.log('Ответ на задание №6: наименьшее значание из чисел ', 37,'и ', 97,' = ', resualt6)
 
 //Задание №7
 console.log(' ') //разделитель для заданий в консоли
 console.log('Ответ на задание №7:')
-for (i = 0; i <= 15; i++) {
+for (let i = 0; i <= 15; i++) {
     if (i % 2 == 0) {
 console.log (i + ' это четное число')
     }
@@ -105,7 +105,7 @@ console.log (i + ' это четное число')
 console.log(' ') //разделитель для заданий в консоли
 console.log('Ответ на задание №8:')
 
-for (i = 0; i <= 100; i++) {
+for (let i = 0; i <= 100; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
         console.log (i,'FizzBuzzо')
     }
@@ -121,88 +121,93 @@ console.log (i, 'Fizz')
 //Задание №9
 console.log(' ') //разделитель для заданий в консоли
 console.log('Ответ на задание №9:')
-let sum_9_one = 0
-let sum_9_two = 0
-for (i = 0; i <= 1000; i++) {
+let sumOne = 0
+let sumTwo = 0
+let sumThree = 0
+for (let i = 0; i <= 1000; i++) {
+    if (i % 3 == 0 && i % 4 == 0) {
+        sumThree = sumThree + i
+    }
     if (i % 4 == 0) {
-        sum_9_one = sum_9_one + i
+        sumOne = sumOne + i
     }
   else if (i % 3 == 0) {
-    sum_9_two = sum_9_two + i
+    sumTwo = sumTwo + i
     }
     
 }
-console.log ('Сумма чисел, кратных 4 в диапазоне от 0 до 1000 = ', + sum_9_one)
-console.log ('Сумма чисел, кратных 3 в диапазоне от 0 до 1000 = ', + sum_9_two)
+console.log ('Сумма чисел, кратных 4 в диапазоне от 0 до 1000 = ', + sumOne)
+console.log ('Сумма чисел, кратных 3 в диапазоне от 0 до 1000 = ', + sumTwo)
+console.log ('Сумма чисел, кратных и 3, и 4 в диапазоне от 0 до 1000 = ', + sumThree)
 
 //Задание №10
 console.log(' ')
-let a_10 = 785
-let b_10 = -10
-let c_10 = -77
-let a_10s = undefined
-let b_10s = undefined
-let c_10s = undefined
+let a10 = 785
+let b10 = -10
+let c10 = -77
+let a10S = null
+let b10S = null
+let c10S = null
 
 
-if (a_10 < 0)
+if (a10 < 0)
 {
- a_10s='-'
+ a10S='-'
 }
 else {
-    a_10s=' '
+    a10S=' '
 }
 
 
-if (b_10 < 0)
+if (b10 < 0)
 {
- b_10s='-'
+ b10S='-'
 }
 else {
-    b_10s=' '
+    b10S=' '
 }
 
-if (c_10 < 0)
+if (c10 < 0)
 {
- c_10s='-'
+ c10S='-'
 }
 else {
-    c_10s=' '
+    c10S=' '
 }
 
 
-console.log ('Ответ на задание №10. Знаки чисел',a_10,', ',b_10,', ',c_10,':', a_10s,',', b_10s,',', c_10s)
+console.log ('Ответ на задание №10. Знаки чисел',a10,', ',b10,', ',c10,':', a10S,',', b10S,',', c10S)
 
 //Задание №11
 console.log(' ') //разделитель для заданий в консоли
-const str_11 = 'Привет'
-const num_11 = 123
-const flag_11 = true
-const txt_11 = 'true'
+const str11 = 'Привет'
+const num11 = 123
+const flag11 = true
+const txt11 = 'true'
 console.log('Ответ на задание №11:')
-console.log('Тип данных переменной str:', typeof(str_11))
-console.log('Тип данных переменной num:', typeof(num_11))
-console.log('Тип данных переменной flag:', typeof(flag_11))
-console.log('Тип данных переменной txt:', typeof(txt_11))
+console.log('Тип данных переменной str:', typeof(str11))
+console.log('Тип данных переменной num:', typeof(num11))
+console.log('Тип данных переменной flag:', typeof(flag11))
+console.log('Тип данных переменной txt:', typeof(txt11))
 
 //Задание №12
 console.log(' ') //разделитель для заданий в консоли
-let a1_12 = (5 + 3) * (5 - 3)
-let a2_12 = (10 - 6) * 200
-let a3_12 = (534 * 132) / 18
-let a4_12 = 123 * 3 + 10
-let a5_12 = 12 * 13 * 14
+let a1Z12 = (5 + 3) * (5 - 3)
+let a2Z12 = (10 - 6) * 200
+let a3Z12 = (534 * 132) / 18
+let a4Z12 = 123 * 3 + 10
+let a5Z12 = 12 * 13 * 14
 console.log('Ответ на задание №12:')
-console.log('(5 + 3) * (5 - 3) = ',a1_12)
-console.log('(10 - 6) * 200 = ',a2_12)
-console.log('(534 * 132) / 18 = ',a3_12)
-console.log('123 * 3 + 10 = ',a4_12)
-console.log('12 * 13 * 14 = ',a5_12)
+console.log('(5 + 3) * (5 - 3) = ',a1Z12)
+console.log('(10 - 6) * 200 = ',a2Z12)
+console.log('(534 * 132) / 18 = ',a3Z12)
+console.log('123 * 3 + 10 = ',a4Z12)
+console.log('12 * 13 * 14 = ',a5Z12)
 
 //Задание №13
 console.log(' ') //разделитель для заданий в консоли
-const num_12 = prompt ("Задание 13. Введи число", '')
-if (num_12%2==0) {
+const num12 = prompt ("Задание 13. Введи число", '')
+if (num12 % 2==0) {
     alert ('Ты указал чётное число')
 }
 else {
@@ -213,14 +218,14 @@ else {
 //Задание №14
 console.log(' ') //разделитель для заданий в консоли
 
-const loanАmount_14 = 1000
-const yearLoan_14 = 5
-const interestRate_14 = 10
-const annualPayment_14 = loanАmount_14/yearLoan_14
-const yearsumprocent_14 = annualPayment_14*10/100
-const overpayment_14 = (loanАmount_14 - (yearLoan_14*(annualPayment_14+yearsumprocent_14))) * -1
+const loanАmount14 = 1000
+const yearLoan14 = 5
+const interestRate14 = 10
+const annualPayment14 = loanАmount14/yearLoan14
+const yearsumprocent14 = annualPayment14*10/100
+const overpayment14 = (loanАmount14 - (yearLoan14*(annualPayment14+yearsumprocent14))) * -1
 
-console.log('Ответ на задание №14:',overpayment_14)
+console.log('Ответ на задание №14:',overpayment14)
 
 
 //Задание №15
@@ -283,9 +288,9 @@ const users = [
   //Задание №17
 console.log(' ')
 
-let string_17="#"
+let string17="#"
 console.log('Ответ на задание №17:')
-for (i=0 ; i  <= 6 ; i++){
+for (let i=0 ; i  <= 6 ; i++){
 
-    console.log (string_17.repeat(i), '\n')
+    console.log (string17.repeat(i), '\n')
 }
