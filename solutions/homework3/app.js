@@ -4,7 +4,8 @@ let a1 = 1
 let b1 = 2
 let c1 = " белых медведей"
 
-let resualt1 = a1 + b1 + c1
+let resualt1 = b1 + c1
+resualt1 = a1 + resualt1
 
 console.log ('Ответ на задание №1: ', resualt1)
 
