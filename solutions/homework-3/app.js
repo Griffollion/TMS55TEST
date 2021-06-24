@@ -137,7 +137,7 @@ let yearPercent
 for (i = 0; i < 5; i++) {
 yearPercent = creditAmount * percent / 100 
 creditSumma += yearPercent
-creditAmount -= yearPercent
+creditAmount -= 200
 }
 
 console.log (`Решение задачи 14: процент по кредиту на 5 лет составит ${creditSumma} рубль`)
@@ -179,3 +179,12 @@ for (i = 0; i < usersData.length; i++){
 }
 
 console.log (`Решение задачи 15: совершеннолетние: ${adults}, несовершеннолетние: ${minors}`)
+
+// задание 16
+
+let symbol = '#'
+for (i=0; i < 10; i++){    
+console.log(`${symbol}\n`)
+symbol += '#'
+}
+
