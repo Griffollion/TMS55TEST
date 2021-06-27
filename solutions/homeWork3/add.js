@@ -72,18 +72,18 @@
 //}
 
 //Задание 9
-//let number1000 = 1000
-//let total3 = 0
-//let total4 = 0
-//for (var i = 0; i <= number1000; i++){
+// let number1000 = 1000
+// let sum3 = 0
+// let sum4 = 0
+// for (var i = 0; i <= number1000; i++){
 //    if (i % 3 === 0){
-//        total3 += i;
+//        sum3 += i;
 //    } else if (i % 4 === 0){
-//        total4 += i;
+//        sum4 += i;
 //    }
-//}
-//console.log('Число кратное трем ' + total3)
-//console.log('Число кратное четырем ' + total4)
+// }
+// console.log('сумма чисел кратная трем ' + sum3)
+// console.log('сумма чисел кратная четырем ' + sum4)
 
 //Задание 10
 //let a1 = 5
@@ -130,7 +130,7 @@
 //console.log(((credit * procent) + credit) * years)
 
 //Задание 15
-//let product = {
+// let product = {
 //    name: 'Galaxy S20',
 //    price: '800$',
 //    type: 'mobile phone',
@@ -138,8 +138,8 @@
 //    manufacturer: 'Samsung Electronics',
 //    country: 'Korea',
 //    isGaranty: '1 years'
-//}
-//console.log(product.name, product.price, product.type, product.releaseDate, product.manufacturer,
+// }
+// console.log(product.name, product.price, product.type, product.releaseDate, product.manufacturer,
 //    product.country, product.isGaranty)
 
 //Задание 16
