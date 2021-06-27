@@ -13,7 +13,7 @@ function getWordUppercase (str) {
     }
    return str;
 }
-//console.log (getWordUppercase(str))
+console.log (getWordUppercase(str))
 
 // Задание 19
 // Написать функцию, которая будет высчитывать сумму чисел от нуля,
@@ -28,7 +28,7 @@ summa = summa + i;
 }
 return summa;
 }
-//console.log (getSumm(100));
+console.log (getSumm(100));
 
 // Задание 20
 // Суммирование чисел в массиве
@@ -47,7 +47,7 @@ summArray = summArray + numbers[i];
 }
 return summArray;
 }
-//console.log(getSummArray())
+console.log(getSummArray())
 
 //Задание 21
 // Площадь треугольника 
@@ -56,7 +56,7 @@ let widthTriangle = 0;
 function squareTriangle (widthTriangle, heightTriangle) {
 return (1/2)*widthTriangle*heightTriangle;
 }
-//console.log (squareTriangle(36, 18))
+console.log (squareTriangle(36, 18))
 
 // Задание 22
 // Создать объект пользователя интернет магазина
@@ -66,7 +66,7 @@ let userInternetShop = {
     isLikeFruits: true,
     IQ: 120
 }
-//console.log(userInternetShop);
+console.log(userInternetShop);
 
 //Задание 23
 let userStudents = [
@@ -109,13 +109,13 @@ let userStudents = [
 //если процент > 60 - 2
 for (let i = 0; i<userStudents.length; i++){
     if (userStudents[i].percentTest >= 90) {
-     //   console.log (`${userStudents[i].name} - 5`);
+console.log (`${userStudents[i].name} - 5`);
     } else if (userStudents[i].percentTest >=80 &&  userStudents[i].percentTest < 90) {
-      //  console.log (`${userStudents[i].name} - 4`);
+console.log (`${userStudents[i].name} - 4`);
     } else if (userStudents[i].percentTest >= 70 && userStudents[i].percentTest < 80) {
-      //  console.log (`${userStudents[i].name} - 3`);
+console.log (`${userStudents[i].name} - 3`);
     } else {
-        //console.log (`${userStudents[i].name} - 2`);
+console.log (`${userStudents[i].name} - 2`);
     }
 }
 
@@ -135,10 +135,10 @@ function getAges(array) {
    }
    return ageArray;
 } 
-//console.log(getAges(array))
+console.log(getAges(array))
 
 //Задача 25
-function getAges(array, key) {
+function getArrayField(array, key) {
     let ageArray = [];
    for (let i = 0; i < array.length; i++) {
        if (key == 'age') {
@@ -149,19 +149,17 @@ function getAges(array, key) {
    }
    return ageArray;
 } 
-//console.log(getAges(array,'name'))
+console.log(getArrayField(array,'name'))
 
 // Задание 26
 // Написать код, который заменит регистр каждого символа на противоположный.
 // Например 'Hello world' -> 'hELLO WORLD'
 
 let newStr = ' '
-
 function changeRegistr () {
     newStr = str.split('')
     for (let i = 0; i < newStr.length; i++){
-    if (newStr[i].toUpperCase () == newStr[i]) {  
-        
+    if (newStr[i].toUpperCase () == newStr[i]) {    
    newStr[i] = newStr[i].toLowerCase()
             } else {
         newStr[i] = newStr[i].toUpperCase()
@@ -170,8 +168,8 @@ function changeRegistr () {
  newStr = newStr.join('')
 return newStr 
 }
-//console.log (str)
-//console.log (changeRegistr(newStr))
+console.log (str)
+console.log (changeRegistr(newStr))
 
 //Задание 27
 // Напишите код, который добавит символ двоеточие(':') между нечетными числами.
@@ -189,15 +187,7 @@ function addColon () {
     return newString27;
 }
 
-//console.log(addColon(string27))
-
-
-//Задание 28
-//  Написать функцию, которая принимает первым аргументом условие,
-//  вторым и третьим аргументом функции(функции могут делать все что угодно на ваш выбор).
-//  Внутри если условие равно true, то выполнить первую функцию, если false, то выполнить вторую функцию.
-let isMale = true
-
+console.log(addColon(string27))
 
 
 // Задание 29
@@ -211,7 +201,7 @@ function getSumString (string) {
     }
     return sumString
 }
-//console.log (getSumString('2015'))
+console.log (getSumString('2015'))
 
 //Задание 30
 let string30 = 'HeLLo MY DeAr FRieNdS';
@@ -225,7 +215,7 @@ function getStringLowerCase () {
     return string30;
     
 }
-//console.log(getStringLowerCase(string30))
+console.log(getStringLowerCase(string30))
 
 //Задание 31
 let string31 = 'беларуский государственный университет информатики радиоэлектроники';
@@ -239,6 +229,4 @@ function getAbbreviation (string31) {
     abr = abr.toUpperCase();
     return abr;
 }
-//console.log (getAbbreviation(string31))
-
-
+console.log (getAbbreviation(string31))
