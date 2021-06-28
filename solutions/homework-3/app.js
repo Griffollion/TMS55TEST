@@ -2,7 +2,7 @@
 let a = 1
 let b = 2
 let c = ' белых медведей'
-let resultAssignment = String(a) + b + c
+let resultAssignment = a + (b + c)
 console.log(`Решение задачи 1: ${resultAssignment}`)
 
 // задание 2
@@ -10,26 +10,26 @@ let a1 = 10
 let b1 = 2
 let c1 = 5
 let summaVariables = a1 + b1 + c1
-alert (`Решение задачи 2: ${summaVariables}`)
+alert(`Решение задачи 2: ${summaVariables}`)
 console.log(`Решение задачи 2: ${summaVariables}`)
 
 // задание 3
 let num = 10;
-num = ++num;
-num = ++num;
-num = --num;
+++num;
+++num;
+--num;
 alert(`Решение задачи 3: ${num}`);
 console.log(`Решение задачи 3: ${num}`)
 
 // задание 4
 let numbers = [5, 29, 11, 33, 13, 76, 4, 9]
-let iAmBigNumber = 0
+let maxNumber = 0
 for (i=0; i < numbers.length; i++){
-    if (numbers [i] > iAmBigNumber){
-        iAmBigNumber = numbers [i]
+    if (numbers [i] > maxNumber){
+        maxNumber = numbers [i]
     } 
 }
-console.log(`Решение задачи 4: большее из чисел - ${iAmBigNumber}`)
+console.log(`Решение задачи 4: большее из чисел - ${maxNumber}`)
 
 // задание 5
 let a6 = 5 % 3
@@ -42,13 +42,13 @@ console.log(`Решение задачи 5: ${a6}, ${a7}, ${a8}, ${a9}, ${a10}`)
 
 // задание 6
 let number = [5, 29, 11, 33, 13, 76, 4, 9]
-let iAmSmallNumber = 999999999n
+let minNumber = 999999999n
 for (i=0; i < number.length; i++){
-    if (number [i] < iAmSmallNumber){
-        iAmSmallNumber = number [i]
+    if (number [i] < minNumber){
+        minNumber = number [i]
     } 
 }
-console.log(`Решение задачи 6: меньшее из чисел - ${iAmSmallNumber}`)
+console.log(`Решение задачи 6: меньшее из чисел - ${minNumber}`)
 
 // задание 7
 console.log(`Решение задачи 7:`)
