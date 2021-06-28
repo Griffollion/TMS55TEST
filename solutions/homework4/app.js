@@ -230,3 +230,20 @@ function getAbbreviation (string31) {
     return abr;
 }
 console.log (getAbbreviation(string31))
+
+// Задание 28
+var isMale = false;
+var male = function maleParametrFunction() {
+    return "hello, man"
+}
+var female = function femaleParametrFunction() {
+    return "hello, woman"
+}
+function determineGender(isMale, male, female) {
+    if (isMale == true) {
+        return male
+    } else {
+        return female
+    }
+}
+console.log(determineGender(isMale, male(),female()))
