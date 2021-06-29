@@ -131,24 +131,88 @@
 
 //Задание 7
 
+// for (let i = 0; i < 16; i++){
+//     if (i % 2 == 0) {
+//         console.log(i, ' - четное число')
+//     } else {
+//         console.log(i, ' - нечетное число')
+//     }
+// }
 
 
 
 //Задание 8
 
-
+// for (let i = 0; i < 101; i++) {
+//     if (i % 3 == 0 && i % 5 == 0) {
+//         console.log('FizzBuzz')
+//     } else if (i % 3 == 0) {
+//         console.log('Fizz')
+//     } else if (i % 5 == 0) {
+//         console.log('Buzz')
+//     }
+// }
 
 
 
 //Задание 9
 
+// Попытка 1
 
+// let sum3 = 0
+// let sum4 = 0
+
+// for (let i = 0; i < 1001; i++) {
+//     if (i % 4 == 0) {
+//         let sum4 = sum4 + i
+//         console.log(sum4)
+//     } 
+//     if (i % 3 == 0) {
+//         let sum3 = sum3 + i
+//         console.log(sum3)
+//     }
+// }
+
+
+
+
+// Попытка 2
+
+// let sum3 = 0
+// let sum4 = 0
+
+// for (let i = 0; i < 1001; i++){
+//     if (i % 4 == 0) {
+//         sum4 += i
+//     }
+//     if (i % 3 == 0) {
+//         sum3 += i
+//     }
+// }
+// console.log(sum4)
+// console.log(sum3)
 
 
 
 //Задание 10
 
+// const a1 = -5
+// const a2 = 8
+// const a3 = 2
 
+// if (a1 < 0 && a2 < 0 && a3 < 0) {
+//     alert ('Знаки чисел a1, a2, a3: -, -, -')
+// } else if (a1 < 0 && a2 < 0 && a3 > 0) {
+//     alert ('Знаки чисел a1, a2, a3: -, -, ')
+// } else if (a1 < 0 && a2 > 0 && a3 < 0) {
+//     alert ('Знаки чисел a1, a2, a3: -, , -')
+// } else if (a1 > 0 && a2 < 0 && a3 < 0) {
+//     alert ('Знаки чисел a1, a2, a3: , -, -')
+// } else if (a1 < 0 && a2 > 0 && a3 > 0) {
+//     alert ('Знаки чисел a1, a2, a3: -, , ')
+// } else if (a1 > 0 && a2 > 0 && a3 > 0) {
+//     alert ('Знаки чисел a1, a2, a3: , , ')
+// }
 
 
 
@@ -173,6 +237,13 @@
 
 //Задание 13
 
+// let numb = prompt ('Введите любое целое число')
+
+// if (numb % 2 == 0) {
+//     alert ('Это четное число')
+// } else {
+//     alert ('Это не четное число')
+// }
 
 
 
@@ -219,7 +290,7 @@
 
 
 
-
+'use strict'
 
 
 
