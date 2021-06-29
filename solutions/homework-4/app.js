@@ -259,9 +259,8 @@ console.log(calcDigit())
 console.log (`Решение задачи 30:`)
 
 let getKebabCase = (text) => {
-    let newText = ''
-    newText = text.toLowerCase().split(' ').join('-')
-    console.log(newText)
+    text = text.toLowerCase().split(' ').join('-')
+    console.log(text)
 }
 
 getKebabCase('Возвращает итератор по всем Рзультатам при Сопоставлении строки с регУлярным выражением.')
