@@ -1,3 +1,7 @@
+'use strict'
+
+
+
 //Задание 1 
 
 // let a = 1
@@ -164,15 +168,14 @@
 
 // for (let i = 0; i < 1001; i++) {
 //     if (i % 4 == 0) {
-//         let sum4 = sum4 + i
-//         console.log(sum4)
+//         sum4 = sum4 + i
 //     } 
 //     if (i % 3 == 0) {
-//         let sum3 = sum3 + i
-//         console.log(sum3)
+//         sum3 = sum3 + i
 //     }
 // }
-
+// console.log(sum4)
+// console.log(sum3)
 
 
 
@@ -289,8 +292,6 @@
 //Задание 17
 
 
-
-'use strict'
 
 
 
