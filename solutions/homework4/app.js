@@ -20,9 +20,8 @@ console.log (getWordUppercase(str))
 // до параметра, который мы в неё передаем, например: getSum(100) должна передавать сумму 
 // чисел от 0 до 100 (должно получится 5050)
 
-let summa = 0;
-let num = 0;
 function getSumm(num) {
+    let summa = 0;
 for (let i = 0; i <= num; i++) {
 summa = summa + i;
 }
@@ -37,22 +36,21 @@ console.log (getSumm(100));
 // Расширить функционал, так, чтобы скрипт игнорировал другие типы данных.
 
 var numbers = [10, 'hfj', 25, null, 100];
-let summArray = 0;
-function getSummArray () {
-    for (let i = 0; i < numbers.length; i++) {
-    if (typeof(numbers[i]) == 'number') {
-summArray = summArray + numbers[i];
+function getSummArray (arr) {
+    let summArray = 0;
+    for (let i = 0; i < arr.length; i++) {
+    if (typeof(arr[i]) == 'number') {
+summArray = summArray + arr[i];
    }
    
 }
 return summArray;
 }
-console.log(getSummArray())
+console.log(getSummArray(numbers))
 
 //Задание 21
 // Площадь треугольника 
-let heightTriangle = 0;
-let widthTriangle = 0;
+
 function squareTriangle (widthTriangle, heightTriangle) {
 return (1/2)*widthTriangle*heightTriangle;
 }
@@ -107,10 +105,10 @@ let userStudents = [
 //если процент > 80 - 4
 //если процент > 70 - 3
 //если процент > 60 - 2
-for (let i = 0; i<userStudents.length; i++){
+for (let i = 0; i < userStudents.length; i++){
     if (userStudents[i].percentTest >= 90) {
 console.log (`${userStudents[i].name} - 5`);
-    } else if (userStudents[i].percentTest >=80 &&  userStudents[i].percentTest < 90) {
+    } else if (userStudents[i].percentTest >= 80 &&  userStudents[i].percentTest < 90) {
 console.log (`${userStudents[i].name} - 4`);
     } else if (userStudents[i].percentTest >= 70 && userStudents[i].percentTest < 80) {
 console.log (`${userStudents[i].name} - 3`);
@@ -143,21 +141,24 @@ function getArrayField(array, key) {
    for (let i = 0; i < array.length; i++) {
        if (key == 'age') {
    ageArray.push(array[i].age)
-} else {
+} else if (key == 'name') {
    ageArray.push(array[i].name)
-}
+} else 
+console.log('Key is not correct')
    }
+   
    return ageArray;
+   
 } 
-console.log(getArrayField(array,'name'))
+console.log(getArrayField(array,'phone'))
 
 // Задание 26
 // Написать код, который заменит регистр каждого символа на противоположный.
 // Например 'Hello world' -> 'hELLO WORLD'
 
-let newStr = ' '
+
 function changeRegistr () {
-    newStr = str.split('')
+    let newStr = str.split('')
     for (let i = 0; i < newStr.length; i++){
     if (newStr[i].toUpperCase () == newStr[i]) {    
    newStr[i] = newStr[i].toLowerCase()
@@ -169,15 +170,16 @@ function changeRegistr () {
 return newStr 
 }
 console.log (str)
-console.log (changeRegistr(newStr))
+console.log (changeRegistr(str))
 
 //Задание 27
 // Напишите код, который добавит символ двоеточие(':') между нечетными числами.
 // Например, число 556 результат должен быть '5:56', 566 -> 566, 655 -> 65:5
 
-let string27 = '68757631'
-let newString27 = ''
+
 function addColon () {
+    let string27 = '68757631';
+    let newString27 = '';
     for (let i = 0; i < string27.length; i++) {
         newString27 += string27[i];
         if (string27[i] % 2 == 1 && string27[i+1] % 2 == 1){
@@ -187,25 +189,25 @@ function addColon () {
     return newString27;
 }
 
-console.log(addColon(string27))
+console.log(addColon())
 
 
 // Задание 29
 // Написать функцию, которая будет принимать число (дефолтное значение 2021) и вычисляет сумму цифр из которых состоит число.
 // Для 2021 это будет 5.
-let string = '2021';
-let sumString = 0;
+//let string = '2021';
 function getSumString (string) {
+    let sumString = 0;
     for (let i = 0; i < string.length; i++) {
         sumString += Number(string[i])
     }
     return sumString
 }
-console.log (getSumString('2015'))
+console.log (getSumString('2021'))
 
 //Задание 30
-let string30 = 'HeLLo MY DeAr FRieNdS';
-function getStringLowerCase () {
+
+function getStringLowerCase (string30) {
     string30 = string30.toLowerCase()
     for (let i = 0; i < string30.length; i++) {
         if (string30[i] == ' ') {
@@ -215,12 +217,11 @@ function getStringLowerCase () {
     return string30;
     
 }
-console.log(getStringLowerCase(string30))
+console.log(getStringLowerCase('HeLLo MY DeAr FRieNdS'))
 
 //Задание 31
-let string31 = 'беларуский государственный университет информатики радиоэлектроники';
-let abr = string31[0];
 function getAbbreviation (string31) {
+    let abr = string31[0];
     for (let i = 0; i < string31.length; i++) {
         if (string31[i] == ' ') {
             abr += string31[i+1]
@@ -229,7 +230,7 @@ function getAbbreviation (string31) {
     abr = abr.toUpperCase();
     return abr;
 }
-console.log (getAbbreviation(string31))
+console.log (getAbbreviation('беларуский государственный университет информатики радиоэлектроники'))
 
 // Задание 28
 var isMale = false;
