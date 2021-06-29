@@ -241,20 +241,18 @@ addSymbol(445567789989)
 // задание 28
 console.log (`Решение задачи 28:`)
 
-let result = confirm('Вы хотите оформить кредит в нашем банке?')
-let showMessageOne = () => {
-    alert('Отлично, мы рады предложить вам хорошие условия :)')
-}
-let showMessageTwo = () => {
-    alert('Жаль, что вы не хотете стать клиентом нашего бака (:')
-}
-function getAnswer (response, showMessageOne, showMessageTwo) {
-    if (response == true) {
-       return showMessageOne()
-    } return showMessageTwo()
+function getAnswer (ask, showMessageYes, showMessageNo) {
+    let result = confirm(ask)
+    result ? showMessageYes(): showMessageNo()
 }
 
-getAnswer(result, showMessageOne, showMessageTwo)
+let showYes = () => {
+    alert('Отлично, мы рады предложить вам хорошие условия :)')
+}
+let showNo = () => {
+    alert('Жаль, что вы не хотете стать клиентом нашего бака (:')
+}
+getAnswer('Вы хотите оформить кредит в нашем банке?', showYes, showNo)
 
 // задание 29
 console.log (`Решение задачи 29:`)
