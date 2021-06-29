@@ -94,4 +94,9 @@
 //     country: "France",
 //     isGaranty: true
 // }
-// console.log (product)
+// console.log (product.name)
+// console.log (product.price)
+// console.log (product.releareDate)
+// console.log (product.manufacturer)
+// console.log (product.country)
+// console.log (product.isGaranty)
