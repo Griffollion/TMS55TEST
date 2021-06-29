@@ -40,9 +40,8 @@ let usersData = [
 
 let adults = []
 let minors = []
-let i
 
-for (i = 0; i < usersData.length; i++){
+for (let i = 0; i < usersData.length; i++){
     if (usersData[i].age < 18) {
         minors.push(usersData[i].name);
     } else{
@@ -54,40 +53,42 @@ console.log (`Решение задачи 16:\n совершеннолетние
 console.log()
 // задание 17
  
-console.log (`Решение задачи 17:\n`)
-let symbol = '#'
-for (i=0; i < 10; i++){    
-console.log(`${symbol}\n`)
-symbol += '#'
+console.log (`Решение задачи 17:`)
+let symbol = ''
+for (let i=0; i < 10; i++){    
+    for(let j = 0; j < i; j++){
+        symbol += '#'
+    }
+    symbol += '\n'
 }
-console.log()
+console.log(symbol)
 
 // задание 18
 console.log (`Решение задачи 18:`)
 
-function getNewString (text){
+function getCapitalizedString (text){
     if (typeof(text) != 'string'){
         return console.log ('Введите текстовое значение')
     } else {
     let newStringArray = text.split(' ')
-    for (i=0; i < newStringArray.length; i++){
+    for (let i = 0; i < newStringArray.length; i++){
         newStringArray[i] = newStringArray[i].slice(0,1).toUpperCase() + newStringArray[i].slice(1)
     }
     let newString = newStringArray.join(' ') 
     console.log(newString)
     } 
 }
-getNewString('Разбивает объект String на массив строк, разделённых указанной строкой на подстроки.')
+getCapitalizedString('Разбивает объект String на массив строк, разделённых указанной строкой на подстроки.')
 
 // задание 19
 console.log (`Решение задачи 19:`)
 
 function  getSum(parametr){
-    let sumNumbers = 0
-   for (i=0; i <= parametr; i++ ){
-     sumNumbers += i
+    let sum = 0
+   for (let i = 0; i <= parametr; i++ ){
+     sum += i
  }
- console.log(sumNumbers)
+ console.log(sum)
  }
  getSum(100)
 
@@ -96,19 +97,18 @@ function  getSum(parametr){
 console.log (`Решение задачи 20:`)
 
 var numbers = [2,20,43,'', 'i', true, 15]
-const calcArray = () => {
+const getArraySum = () => {
     let sumArray = 0
-    for (i=0; i < numbers.length;){
+    for (let i = 0; i < numbers.length; i++){
         if (typeof(numbers[i]) != 'number') {
-            i++
+            continue
         } else{
             sumArray += numbers[i]
-            i++
         }
     }
     console.log(sumArray)
 }
-calcArray()
+getArraySum()
 
 // задание 21
 console.log (`Решение задачи 21:`)
@@ -124,7 +124,7 @@ console.log (`Решение задачи 22:`)
 let userData = {
     name: 'Сергей',
     email: 'serhej@mail.ru',
-    isLikeFruits: 'да',
+    isLikeFruits: true,
     indikatorIQ: 120
 }
 console.log(`Данные пользователя:\n Имя: ${userData.name}\n Email: ${userData.email}\n любит фрукты: ${userData.isLikeFruits}\n показатель IQ: ${userData.indikatorIQ}`)
@@ -154,7 +154,7 @@ let listStudents = [
     resultTest: 57,
 }
 ]
-for (i=0; i < listStudents.length; i++) {
+for (let i = 0; i < listStudents.length; i++) {
     if (listStudents[i].resultTest < 70) {
         console.log(`Оценка ${listStudents[i].name} - 2`)
     } if  (listStudents[i].resultTest >= 70 && listStudents[i].resultTest < 80) {
@@ -169,11 +169,11 @@ for (i=0; i < listStudents.length; i++) {
 console.log (`Решение задачи 24:`)
 
 function getAges(array){
-    let arrayAge = []
-    for (i=0; i < array.length; i++){
-    arrayAge.push(array[i].age)
+    let age = []
+    for (let i = 0; i < array.length; i++){
+    age.push(array[i].age)
     }
-    console.log(arrayAge)
+    console.log(age)
 }
 
 getAges([
@@ -188,16 +188,12 @@ getAges([
 console.log (`Решение задачи 25:`)
 
 function getData(array,key){
-    let keyAge = []
-    let keyName = []
-    for (i=0; i < array.length; i++){
-    keyAge.push(array[i].age)
-    keyName.push(array[i].name)
+    let data = []
+    for (let i = 0; i < array.length; i++){
+    data.push(array[i][key])
     }
-    if (key == 'name'){
-        console.log(keyName)
-    } else if(key == 'age') {
-        console.log(keyAge)
+    if (key === 'name' || key === 'age') {
+        console.log(data)
     } else console.log('Введите корректное значение ключевого слова: name или age')
 }
 
@@ -214,7 +210,7 @@ console.log (`Решение задачи 26:`)
 
 const getString = (text) => {
     let newString = ''
-    for (i=0; i < text.length; i++){
+    for (let i = 0; i < text.length; i++){
         if (text[i] === text[i].toUpperCase()){
         newString += text[i].toLowerCase()
         } else {
@@ -231,7 +227,7 @@ console.log (`Решение задачи 27:`)
 const addSymbol = (number) => {
     let newNumber = ''
     let strNumber = String(number)
-    for (i=0; i < strNumber.length; i++){
+    for (let i = 0; i < strNumber.length; i++){
          if (strNumber[i] % 2 === 0){
             newNumber += strNumber[i]
         } else if (typeof(strNumber[i+1]) == 'undefined' || strNumber[i+1] % 2 === 0) {
@@ -242,13 +238,30 @@ const addSymbol = (number) => {
 }
 addSymbol(445567789989)
 
+// задание 28
+console.log (`Решение задачи 28:`)
+
+let result = confirm('Вы хотите оформить кредит в нашем банке?')
+let showMessageOne = () => {
+    alert('Отлично, мы рады предложить вам хорошие условия :)')
+}
+let showMessageTwo = () => {
+    alert('Жаль, что вы не хотете стать клиентом нашего бака (:')
+}
+function getAnswer (response, showMessageOne, showMessageTwo) {
+    if (response == true) {
+       return showMessageOne()
+    } return showMessageTwo()
+}
+
+getAnswer(result, showMessageOne, showMessageTwo)
 
 // задание 29
 console.log (`Решение задачи 29:`)
 let calcDigit = (number = 2021) => {
     number = String(number)
     let sumNumber = 0
-    for (i=0; i < number.length; i++){
+    for (let i = 0; i < number.length; i++){
        sumNumber += +number[i]
     }
     return (sumNumber)
@@ -271,7 +284,7 @@ console.log (`Решение задачи 31:`)
 let getAbbreviation = (text) => {
     let newText = ''
     let arrayText = text.toUpperCase().split(' ')
-    for (i=0; i < arrayText.length; i++){
+    for (let i = 0; i < arrayText.length; i++){
         newText += arrayText[i].slice(0,1)
     }
     console.log(newText)
