@@ -1,8 +1,6 @@
 'use strict'
 //Задание 33
-
-function countFruit() {
-  let fruits = [
+let fruits = [
     'banan',
     'orange',
     'apple',
@@ -11,30 +9,33 @@ function countFruit() {
     'apple',
     'orange',
     'lemon',
+    'watermelon'
   ]
+
+function countFruit(fruits) {
+  
   let countedFruit = {}
   for (let i = 0; i < fruits.length; i++) {
     let a = fruits[i]
     if (countedFruit[a] != undefined) {
-      ++countedFruit[a]
+      countedFruit[a] = countedFruit[a]+1 //++countedFruit[a]
     } else {
       countedFruit[a] = 1
     }
   }
   return countedFruit
 }
-let rezultFruit = countFruit()
+let rezultFruit = countFruit(fruits)
 console.log(rezultFruit)
 
 // Задание 34
-
-//let reverseObject = {}
-function convertObject() {
-  let object = {
+let object = {
     a: 'b',
     c: 'd',
     e: 'f',
   }
+//let reverseObject = {}
+function convertObject(object) {
   let reverseObject = {}
   let keys = Object.keys(object)
   let value = Object.values(object)
@@ -43,5 +44,5 @@ function convertObject() {
   }
   return reverseObject
 }
-let rezultObject = convertObject() // => { b: 'a', d: 'c' }
+let rezultObject = convertObject(object) // => { b: 'a', d: 'c' }
 console.log(rezultObject)
