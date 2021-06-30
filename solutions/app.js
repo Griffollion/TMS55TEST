@@ -37,8 +37,9 @@ for (let i = 0; i < students.length; i++) {
 
 //Задание 33
 
-function countNumberFruits() {
-    let fruits = ['apple', 'apple', 'banana', 'apple', 'lemon', 'banana']
+const fruits = ['apple', 'apple', 'banana', 'apple', 'lemon', 'banana']
+function countNumberFruits(arr) {
+     
     let countFruit = {}
     for (let i = 0; i < fruits.length; i++) {
         let j = fruits[i]
