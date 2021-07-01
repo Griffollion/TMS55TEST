@@ -13,9 +13,7 @@ let makeDataFruits = () => {
     if (copyFruits[i] === copyFruits[j]){
         ++dataFruits[copyFruits[i]]
         copyFruits.splice(j,1)
-    } else {
-       continue
-    }
+    } 
 }
 }
 console.log(dataFruits)
@@ -24,4 +22,23 @@ console.log(dataFruits)
 makeDataFruits()
 
 console.log ('Решение задания 34:')
+
+let object = {
+    color: 'red',
+    mame: 'Serhej',
+    age: 24,
+    car: true,
+    married: false,
+}
+
+function convertorObject(obj){
+    let convertObj = {}
+    for (let key in obj){
+       convertObj[obj[key]] = key
+    }
+    console.log(convertObj)
+}
+convertorObject(object)
+
+
 
