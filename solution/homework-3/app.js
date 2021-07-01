@@ -255,47 +255,47 @@
 // }
 // console.log(user)
 
-// 23; ????????????????????????????????????????????????????????????????????????????????????????????????????????
+23; 
 
-// let users = [
-//   {
-//     name: "Vasily",
-//     trueTest: 81,
-//   },
-//   {
-//     name: "Zina",
-//     trueTest: 77,
-//   },
-//   {
-//     name: "Kat",
-//     trueTest: 88,
-//   },
-//   {
-//     name: "Petr",
-//     trueTest: 98,
-//   },
-//   {
-//     name: "Vova",
-//     trueTest: 57,
-//   },
-// ];
-// // если процент > 90 - 5
-// // если процент > 80 - 4
-// // если процент > 70 - 3
-// // если процент > 60 - 2
-// for (let i = 0; i < users.length; i++) {
-//   if (users[i].trueTest < 60) {
-//     console.log('тупая группа ' + users[i].name);
-//   } else if (users[i].trueTest > 60 && users[i].trueTest <70 ) {
-//     console.log('1 группа ' + users[i].name);
-//   } else if (users[i].trueTest > 70 && users[i].trueTest <80) {
-//     console.log('2 группа ' + users[i].name);
-//   } else if (users[i].trueTest >80 && users[i].trueTest <90) {
-//     console.log('3 группа ' + users[i].name);
-//   } else if (users[i].trueTest > 90) {
-//     console.log('лучшая группа ' + users[i].name);
-//   }
-// }
+let users = [
+  {
+    name: "Vasily",
+    trueTest: 81,
+  },
+  {
+    name: "Zina",
+    trueTest: 77,
+  },
+  {
+    name: "Kat",
+    trueTest: 88,
+  },
+  {
+    name: "Petr",
+    trueTest: 98,
+  },
+  {
+    name: "Vova",
+    trueTest: 57,
+  },
+];
+// если процент > 90 - 5
+// если процент > 80 - 4
+// если процент > 70 - 3
+// если процент > 60 - 2
+for (let i = 0; i < users.length; i++) {
+  if (users[i].trueTest < 60) {
+    console.log('тупая группа ' + users[i].name);
+  } else if (users[i].trueTest > 60 && users[i].trueTest <70 ) {
+    console.log('1 группа ' + users[i].name);
+  } else if (users[i].trueTest > 70 && users[i].trueTest <80) {
+    console.log('2 группа ' + users[i].name);
+  } else if (users[i].trueTest >80 && users[i].trueTest <90) {
+    console.log('3 группа ' + users[i].name);
+  } else if (users[i].trueTest > 90) {
+    console.log('лучшая группа ' + users[i].name);
+  }
+}
 
 // 24.
 // const users = [
@@ -310,5 +310,8 @@
 // getAges(users[0].age,users[1].age);
 
 
-25.
+// 25.
+// let i = 'Flash'
 
+
+// console.log(i.toLowerCase())
