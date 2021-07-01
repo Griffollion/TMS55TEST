@@ -21,6 +21,8 @@ console.log(dataFruits)
 
 makeDataFruits()
 
+// задание 34
+
 console.log ('Решение задания 34:')
 
 let object = {
