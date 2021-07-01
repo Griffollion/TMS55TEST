@@ -116,4 +116,65 @@
 //     isGaranty : true
 // }
 // console.log(product.name, product.price, product.type, product.releaseDate, product.manufacturer, product.country, product.isGaranty)
+///////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
+//HOMEWORK 4
+//Задание 18
+// let n = ""
+// let theSentence = 'Hello, my dear friend'
+// for (let i = 0; i< theSentence.length; i++){
+//     if (theSentence[i] == ' '){
+//      ++i
+//       n=n+' '+ theSentence[i].toUpperCase()  
+        
+//     } else n=n+theSentence[i] 
+   
+// }
+// console.log(n)
+//Задание 19
+// let sum = 0
+// function getSum(a,b){
+//     for (let i =0; i<=100; i++){
+//         sum+=i
+//     }
+//     return sum;
+// }
+// console.log(getSum(0,100))
+//Задание 20
+// var numbers = [10, 25, 100]
+// let sum = 0
+// for (i=0; i < numbers.length; i++){
+    
+//         sum+=numbers[i]
+    
+// }
+// console.log(sum)
+//Задание 21
+// function getSquare(a,b){
+//     let square = a*b
+//     return square
+// }
+// console.log(getSquare(5,4))
+//Задание 22
+// let internetShopUser = {
+//     name : 'Vika',
+//     email : 'vikysik@gmail.com',
+//     isAFruitLover : true,
+//     iqLevel : 65
+
+// }
+// console.log(internetShopUser)
+//Задание 23
+
+// let students = [{name:'Вася', percent:80},{name:'Зина', percent:77}, {name:'Катя', percent:88},{name:'Петя', percent:95}, {name:'Вова', percent:57}]
+// for (let i=0; i<students.length; i++){
+// if (students[i].percent>90){
+//     console.log(students[i].name + ' - ' + 5)
+// }else if (students[i].percent>80){
+//     console.log(students[i].name + ' - ' + 4)
+// }else if (students[i].percent>70){
+//     console.log(students[i].name + ' - ' + 3)
+// }else if  (students[i].percent>60)
+//     console.log(students[i].name + ' - ' + 2)}
+
 
