@@ -41,9 +41,10 @@ function arraySum(array){
 for(let i = 0; i < array.length; i++){
     sum += array[i]
 }
-console.log(sum)
+return sum
 }
-arraySum(numbers)
+const result = arraySum(numbers)
+console.log(result)
 
 
 // задание 21
