@@ -6,20 +6,20 @@ console.log ('Решение задания 33:')
 let fruits = ['apple','banana','apple','lemon','banana','cherry','orange','orange','cherry','apple','peach']
 let makeDataFruits = () => {
     let dataFruits = {}
-    let copyFruits = fruits.slice()
-   for (let i = 0; i < copyFruits.length; i++){
-    dataFruits[copyFruits[i]] = 1
-    for (let j = i+1; j < copyFruits.length; j++){
-    if (copyFruits[i] === copyFruits[j]){
-        ++dataFruits[copyFruits[i]]
-        copyFruits.splice(j,1)
+    for (let i = 0; i < fruits.length; i++){
+    dataFruits[fruits[i]] = 1
+    for (let j = i+1; j < fruits.length; j++){
+    if (fruits[i] === fruits[j]){
+        ++dataFruits[fruits[i]]
+        fruits.splice(j,1)
     } 
 }
 }
-console.log(dataFruits)
+return dataFruits
 }
 
-makeDataFruits()
+let copyFruits = makeDataFruits(fruits)
+console.log(copyFruits)
 
 // задание 34
 
@@ -38,9 +38,9 @@ function convertorObject(obj){
     for (let key in obj){
        convertObj[obj[key]] = key
     }
-    console.log(convertObj)
+    return convertObj
 }
-convertorObject(object)
+let convertObj = convertorObject(object)
 
-
+console.log(convertObj)
 
