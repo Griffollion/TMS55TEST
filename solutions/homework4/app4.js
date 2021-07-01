@@ -7,13 +7,15 @@
 // let someString = 'какая-то непонятная строка нужна для задания' 
 
 // function headingLetter (text) {
-//     let newText = text
-//     newText = text.toLowerCase()
-//     newText = newText.replace(newText.charAt(0), newText.charAt(0).toUpperCase())
-//     for (i = 0; i < newText.lenght; i++) {
-//         if (newText.charAt(i) === '')
-//         newText.replace(newText.charAt(i+1), newText.charAt(i+1).toUpperCase())
+//     let words = text.split (" ")
+//     for (i = 0; i < words.length; i++) {
+//         if (words[i].charAt(0) === words[i].charAt(0).toLowerCase()) {
+//             words[i] = words[i].charAt(0).toUpperCase() + words[i].substr(1)
+//         } else {
+//             words[i] = words[i].charAt(0).toLowerCase() + words[i].substr(1)
+//         }
 //     }
+//     let newText = words.join (" ")
 //     return newText
 // }
 
@@ -39,21 +41,17 @@
 
 //Задание 20
 
-// var numbers = [10, 25, 100, 'gaj', 'jgas']
-// let sum = 0
-
-// function getArraySum () {
+// function getArraySum (numbers) {
+//     let sum = 0
 //     for (let i = 0; i < numbers.length; i++) {
-        
 //         if (typeof numbers[i] === "number") {
 //             sum += numbers[i]
 //         }
-//         console.log(sum)
-//     }
-//     return
+//     }   
+//     return sum
 // }
 
-// console.log(getArraySum())
+// console.log(getArraySum([10, 25, 100, 'i24', 'sgdk']))
 
 
 
