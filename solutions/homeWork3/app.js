@@ -47,8 +47,10 @@
 // if (a>b){
 //     alert(b)
 // }
-// else{
+// else if (a<b){
 //     alert(a)
+// }else{
+//     alert('Числа равны')
 // }
 //Задание 7
 // for (let i = 0; i<15; i++){
@@ -60,13 +62,15 @@
 // }
 //Задание 8
 // for (let i = 0; i<100; i++){
-//     if (i % 3 == 0){
-//         console.log('Fizz')
+//     if (i % 3 == 0 && i % 5 == 0){
+//         console.log('FizzBuzz')
 //     } else if (i % 5 == 0){
 //         console.log('Buzz')
-//     }else{
-//         console.log('FizzBuzz')
-//     }
+//     }else if (i % 3 == 0){
+//         console.log('Fizz')
+//     }else {
+//     console.log('Введите другое число')
+// }
 // }
 //Задание 9
 // let summ3 = 0
