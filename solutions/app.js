@@ -1,85 +1,32 @@
+// Задание 35
 
-//Задание 23 
-let students = [
-    {
-        name: 'Вася',
-        test: 80
-    },
-    {
-        name: 'Зина',
-        test: 77
-    },
-    {
-        name: 'Катя',
-        test: 88
-    },
-    {
-        name: 'Петя',
-        test: 95
-    },
-    {
-        name: 'Вова',
-        test: 57
-    },
+// let arr = [1, 2, 3]
+// let arr2 = arr.reverse()
+// console.log(arr2)
 
-]
-for (let i = 0; i < students.length; i++) {
-    if (students[i].test >= 90) {
-        console.log(`${students[i].name} - 5`);
-    } else if (students[i].test >= 80 && students[i].test < 90) {
-        console.log(`${students[i].name} - 4`);
-    } else if (students[i].test >= 70 && students[i].test < 80) {
-        console.log(`${students[i].name} - 3`);
-    } else {
-        console.log(`${students[i].name} - 2`)
-    }
+// Задание 36
+
+/* const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+const sumArr = arr.reduce((i, j) => i + j, 0)
+console.log(sumArr) */
+
+// Задание 39
+
+/* const genderArr = [{name: 'Yana', gender: 'Female'}, {name: 'Liza', gender: 'Female'}, {name: 'Vasilisa', gender: 'Female'}, {name: 'Slava', gender: 'Male'},{name: 'Yarik', gender: 'Male'},]
+function splitByGender (gender) {
+    let femaleArr = gender.filter((i) => i.gender ==='Female')
+    console.log(femaleArr)
+    let maleArr = gender.filter((j) => j.gender === 'Male')
+    console.log(maleArr)
 }
-
-//Задание 33
-
-const fruits = ['apple', 'apple', 'banana', 'apple', 'lemon', 'banana']
-function countNumberFruits(arr) {
-     
-    let countFruit = {}
-    for (let i = 0; i < fruits.length; i++) {
-        let j = fruits[i]
-        if (countFruit[j] != undefined) {
-            countFruit[j]++
-        } else {
-            countFruit[j] = 1
-        }
-    }
-    return countFruit
-}
-let result = countNumberFruits()
-console.log(result)
+splitByGender(genderArr) */
 
 
-//Задание 34
+// Задание 40
 
-let variables = {
-    a: "b",
-    c: "d",
-};
-
-let arrKeys = [];
-for (key in variables) {
-    arrKeys.push(key);
-}
-
-let arrValues = [];
-for (key in variables) {
-    arrValues.push(variables[key]);
-}
-
-function exchange(object) {
-    let newVariables = {};
-    for (let i = 0; i < arrKeys.length; i++) {
-        newVariables[arrValues[i]] = arrKeys[i];
-    }
-    return newVariables;
-}
-console.log(exchange(variables));
+/* const arr = [false, undefined, '', 0, null, 2, 3, 4];
+let cleaningNumbers = (array) => array.filter((j) => j);
+console.log(cleaningNumbers(arr)) */
 
 
 
