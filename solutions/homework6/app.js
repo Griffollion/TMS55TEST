@@ -1,5 +1,5 @@
 'use strict'
-/* //Задача 35
+//Задача 35
 let array = [23, 59, 61, 14, 78]
 let newArray = array.reverse()
 console.log('Перевернутый массив:', newArray)
@@ -131,7 +131,6 @@ function clearArray(array40) {
 let rezultNewArray = clearArray(array40)
 console.log(array40)
 console.log(rezultNewArray)
- */
 
 //Задача 38
 let calculate = [
@@ -139,21 +138,33 @@ let calculate = [
   { x: 10, z: 21, y: 4 },
   { x: 2, z: 3, y: 4 },
   { a: 1, b: 2 },
-];
+]
 
 function calculatedArray(arr) {
   let calcArray = {}
-calculate.forEach (elemarr => {
-    for (let elem in elemarr ) {
+  calculate.forEach((elemarr) => {
+    for (let elem in elemarr) {
       if (calcArray[elem] != undefined) {
-      calcArray[elem] = calcArray[elem] + elemarr[elem]
-     } else{
-       calcArray[elem] = elemarr[elem]
-     }
-   }
+        calcArray[elem] = calcArray[elem] + elemarr[elem]
+      } else {
+        calcArray[elem] = elemarr[elem]
+      }
+    }
   })
   return calcArray
 }
- 
+
 let rezultCalculatedArray = calculatedArray(calculate)
 console.log(rezultCalculatedArray)
+
+//Задача 41
+let array41 = [23, 56, 34, 97, 61, 17, 29]
+function splitArray(arr, size) {
+  let smallArray = []
+  for (let i = 0; i < arr.length; i = i + size) {
+    smallArray.push(array41.slice(i, i + size))
+  }
+  return smallArray
+}
+let newArray41 = splitArray(array41, 3)
+console.log(newArray41)
