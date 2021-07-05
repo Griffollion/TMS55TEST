@@ -90,3 +90,35 @@ function splitIntoGender (data) {
     console.log(femaleArr)
 }
 splitIntoGender(dataGender)
+
+// задание 40
+
+console.log('Решение задания 40:')
+
+const newArray = [false, 123, 'String', '', null, 2,78,0, true, 'new string', NaN, undefined, 56, 5, 0, null, 233]
+
+let getCleanArray = (arr) => {
+    let newArr = arr.filter((el) => {
+        return !(el == Boolean || el == null ||typeof el == 'underfined'|| el == '' || el !== el)
+    })
+    return newArr
+}
+let newArr = getCleanArray(newArray)
+console.log(newArr)
+
+// задание 41
+
+console.log('Решение задания 41:')
+const oneArray = [1,2,3,4,5,6,7,8,9,10]
+
+let splitArray = (arr,col) => {
+    let newArr = []
+    for (let i=0; i < arr.length; i += col){
+    newArr.push(arr.slice(i, i+col))
+}
+return newArr
+}
+    
+let newOneArr = splitArray(oneArray,3)
+
+console.log(newOneArr)
