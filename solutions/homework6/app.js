@@ -63,14 +63,9 @@ const numbersToCalculate = [
 ]
 
 function calculate (array) {
-    const newObj = {}
-    Object.entries(array).forEach(([key, value]) => [key, value += value])
-    console.log ()
-    return array
+    
 }
-calculate(numbersToCalculate)
 
-console.log(calculate(numbersToCalculate))
 
 
 
