@@ -87,7 +87,7 @@ let male = []
 let female = []
 
 function findOutGender(a, b) {
-  if (b.isMale == true) {
+  if (b.isMale) {
     male.push(b.name)
   } else {
     female.push(b.name)
@@ -109,20 +109,14 @@ let array40 = [
   'Kate',
   0,
   89,
-  ' ',
+  '',
   'Sema',
   false,
 ]
 function clearArray(array40) {
   let newArray40 = []
   array40.forEach((element) => {
-    if (
-      element != ' ' &&
-      element != 0 &&
-      element != null &&
-      element != undefined &&
-      element != false
-    ) {
+    if (element) {
       newArray40.push(element)
     }
   })
@@ -142,7 +136,7 @@ let calculate = [
 
 function calculatedArray(arr) {
   let calcArray = {}
-  calculate.forEach((elemarr) => {
+  arr.forEach((elemarr) => {
     for (let elem in elemarr) {
       if (calcArray[elem] != undefined) {
         calcArray[elem] = calcArray[elem] + elemarr[elem]
