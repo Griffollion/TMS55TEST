@@ -63,7 +63,7 @@ const arrayObj = [
 function calculate(array){
     const sumKeys = array.reduce((sumKey, key) => {
         Object.keys(key).forEach((el,i) => {    
-            sumKey[el] = (sumKey[el] || 0) + Object.values(key)[i]    
+            sumKey[el] = (sumKey[el,i] || 0) + key[el]  
             // if (!sumKey[el]){ 
             //     sumKey[el] = Object.values(key)[i]
             // } else{
@@ -94,13 +94,13 @@ const dataGender = [
 ]
 
 function splitIntoGender (data) {
-    let maleArr = data.filter((el) => el.sex == 'male')
-    console.log(maleArr)
-    
-    let femaleArr = data.filter((el) => el.sex == 'female')
-    console.log(femaleArr)
+    let maleArr = data.filter((el) => el.sex.toLowerCase() === 'male')
+    let femaleArr = data.filter((el) => el.sex.toLowerCase() === 'female')
+    return [femaleArr, maleArr]
 }
-splitIntoGender(dataGender)
+let gender =  splitIntoGender(dataGender)
+
+console.log(gender)
 
 // задание 40
 
