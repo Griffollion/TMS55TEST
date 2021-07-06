@@ -1,0 +1,32 @@
+// Задание 35
+
+// let arr = [1, 2, 3]
+// let arr2 = arr.reverse()
+// console.log(arr2)
+
+// Задание 36
+
+/* const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+const sumArr = arr.reduce((i, j) => i + j, 0)
+console.log(sumArr) */
+
+// Задание 39
+
+/* const genderArr = [{name: 'Yana', gender: 'Female'}, {name: 'Liza', gender: 'Female'}, {name: 'Vasilisa', gender: 'Female'}, {name: 'Slava', gender: 'Male'},{name: 'Yarik', gender: 'Male'},]
+function splitByGender (gender) {
+    let femaleArr = gender.filter((i) => i.gender ==='Female')
+    console.log(femaleArr)
+    let maleArr = gender.filter((j) => j.gender === 'Male')
+    console.log(maleArr)
+}
+splitByGender(genderArr) */
+
+
+// Задание 40
+
+/* const arr = [false, undefined, '', 0, null, 2, 3, 4];
+let cleaningNumbers = (array) => array.filter((j) => j);
+console.log(cleaningNumbers(arr)) */
+
+
+
