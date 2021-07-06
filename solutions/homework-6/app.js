@@ -50,25 +50,36 @@ console.log(converterObject)
  
 // задание 38
 
-// console.log('Решение задания 38:')  
+console.log('Решение задания 38:')  
 
-// const arrayObj = [
-//     {x: 7, y: 6, z: 5},
-//     {x: 1, y: 0, z: 9},
-//     {x: 17, y: 3, z: 9},
-//     {x: 7, a: 7, b: 5},
-//     {c: 7, y: 6, a: 5},
-// ]
+const arrayObj = [
+    {a:7, y:6, z:5},
+    {x:1, y:7, z:9},
+    {x:17, y:3, z:9},
+    {x:7, a:7, b:5},
+    {c:7, y:6, a:5},
+]
 
-// function calculate(array){
-// //     const sumKeys = array.reduce((sumKey, el) => {
-// //                 
-// // return sumKey
-// // },
-// //      {})
-// //  }
+function calculate(array){
+    const sumKeys = array.reduce((sumKey, key) => {
+        Object.keys(key).forEach((el,i) => {    
+            sumKey[el] = (sumKey[el] || 0) + Object.values(key)[i]    
+            // if (!sumKey[el]){ 
+            //     sumKey[el] = Object.values(key)[i]
+            // } else{
+            //     sumKey[el] += Object.values(key)[i]
+            // }
+          
+     })
+     return sumKey
+     },
+     {})
+    return sumKeys
+ }
 
-// console.log(calculate(arrayObj))
+let arrKeys = calculate(arrayObj)
+
+console.log(arrKeys)
 
 // задание 39
 
