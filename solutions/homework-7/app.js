@@ -37,9 +37,9 @@ let resultSum = sumTo(100)
 
 console.log(resultSum)
 
-// задание 43
+// задание 44
 
-console.log('Решение задания 43:')
+console.log('Решение задания 44:')
 
 function getSum(a){
    return function(b){
