@@ -37,3 +37,16 @@ let resultSum = sumTo(100)
 
 console.log(resultSum)
 
+// задание 43
+
+console.log('Решение задания 43:')
+
+function getSum(a){
+   return function(b){
+       return a+b
+   }
+}
+
+let sum = getSum(7)(6)
+console.log(sum)
+
