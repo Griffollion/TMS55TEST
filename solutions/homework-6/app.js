@@ -109,9 +109,7 @@ console.log('Решение задания 40:')
 const newArray = [false, 123, 'String', '', null, 2,78,0, true, 'new string', NaN, undefined, 56, 5, 0, null, 233]
 
 let getCleanArray = (arr) => {
-    let newArr = arr.filter((el) => {
-        return !(el == Boolean || el == null ||typeof el == 'underfined'|| el == '' || el !== el)
-    })
+    let newArr = arr.filter(el => el)
     return newArr
 }
 let newArr = getCleanArray(newArray)
