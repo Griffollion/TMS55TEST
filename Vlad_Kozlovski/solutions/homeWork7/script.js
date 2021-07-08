@@ -26,7 +26,8 @@
 //         this.secondValue = prompt ('Введите второе значени')
 //     }
 //     this.sum = function() {
-//         return this.firstValue + this.secondValue 
+//         return Number(this.firstValue) + Number(this.secondValue)
+//         // return this.firstValue*1 + this.secondValue*1
 //     }
 //     this.mul = function() {
 //         return this.firstValue * this.secondValue
@@ -34,8 +35,8 @@
 // }
 // let calculator = new Calculator();
 // calculator.read();
-// alert( "Sum=" + calculator.sum() );  /*на этом этапе у меня не происходит сложение (22+22 = 2222)*/
-// alert( "Mul=" + calculator.mul() );  /*умножение работает*/
+// alert( "Sum=" + calculator.sum() ); 
+// alert( "Mul=" + calculator.mul() );  
 
 // =========================================================================================
 
@@ -81,3 +82,10 @@
 //     return sumTwo
 // }
 // console.log(sum(45)(333333))
+
+// function sum(a) {
+//     return function sumTwo(b){
+//         return a + b
+//     }
+// }
+// console.log(sum(33)(11))
