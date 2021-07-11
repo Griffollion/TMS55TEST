@@ -77,10 +77,25 @@ let auto = [
     engine_voluem: 2.2,
     fuel: 'disel',
   },
+  {
+    img: 'https://avtomarket.ru/stuff/upload/68/192230_1ohtqy39ut_13317507.jpg',
+    brand: 'Kia',
+    model: 'Rio',
+    year: 2007,
+    price: 3950,
+    engine_voluem: 1.4,
+    fuel: 'petrol',
+  },
 ]
-function createCardHTML(arr) {
+let bugetCars = auto.filter((el) => el.price <= 10000)
+let middleCars = auto.filter((el) => el.price > 10000 && el.price < 40000)
+let premiumCars = auto.filter((el) => el.price > 40000)
+
+function createCardHTML(arr, cls) {
   let cardContainer = document.createElement('div')
   cardContainer.className = 'cardContainer'
+  cardContainer.classList.add(cls)
+
   arr.forEach((element) => {
     let card = document.createElement('div')
     let image = document.createElement('img')
@@ -114,7 +129,8 @@ function createCardHTML(arr) {
     cardContainer.appendChild(card)
     console.log(card)
   })
-
   return document.body.append(cardContainer)
 }
-createCardHTML(auto)
+document.body.append(createCardHTML(bugetCars, 'bugetCars'))
+document.body.append(createCardHTML(middleCars, 'middleCars'))
+document.body.append(createCardHTML(premiumCars, 'premiumCars'))
