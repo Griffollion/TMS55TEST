@@ -77,7 +77,7 @@ const body = document.querySelector('body')
 body.append(h1)
 
 function makeCarsList(arr,css){
-    let main = document.createElement('main')
+    let section = document.createElement('main')
     arr.forEach(element => {
         let card = document.createElement('div')
         card.className = 'card-car'
@@ -93,10 +93,10 @@ function makeCarsList(arr,css){
             <div class = "card-volume">${element.volume}</div>
             <div class = "card-fuel">${element.fuel}</div>
         </div>`
-        main.append(card)
+        section.append(card)
     });
     
-    return main
+    return section
 }
 
 
