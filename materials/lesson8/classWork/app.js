@@ -121,28 +121,28 @@
 // body.append(makeUsersList(commonUsers));
 
 
-// const users = [
-//   { name: "Polina", isVip: true },
-//   { name: "Elizavetta", isVip: true },
-//   { name: "Pavel", isVip: false },
-//   { name: "Oleg", isVip: false },
-// ];
+const users = [
+  { name: "Polina", isVip: true },
+  { name: "Elizavetta", isVip: true },
+  { name: "Pavel", isVip: false },
+  { name: "Oleg", isVip: false },
+];
 
-// const vipUsers = users.filter((el) => el.isVip);
-// const commonUsers = users.filter((el) => !el.isVip);
+const vipUsers = users.filter((el) => el.isVip);
+const commonUsers = users.filter((el) => !el.isVip);
 
-// function makeUsersList(arr, cls) {
-//   const list = document.createElement("ol");
-//   list.classList.add(cls)
-//   arr.forEach((element) => {
-//     list.innerHTML += `<li>${element.name}</li>`;
-//   });
-//   return list;
-// }
+function makeUsersList(arr, cls) {
+  const list = document.createElement("ol");
+  list.classList.add(cls)
+  arr.forEach((element) => {
+    list.innerHTML += `<li>${element.name}</li>`;
+  });
+  return list;
+}
 
-// const body = document.querySelector("body");
-// body.append(makeUsersList(vipUsers, 'vip'));
-// body.append(makeUsersList(commonUsers, 'nischebrody'));
+const body = document.querySelector("body");
+body.append(makeUsersList(vipUsers, 'vip'));
+body.append(makeUsersList(commonUsers, 'nischebrody'));
 
 
 // const card  = `
