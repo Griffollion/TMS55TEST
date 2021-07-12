@@ -60,10 +60,11 @@ const car = [
 
 
 let h1 = document.createElement('h1')
-h1.innerText = 'Best cars in the WORLD'
+h1.innerText = 'Best AUTO in the WORLD'
 h1.className = 'title-cards'
 const body = document.querySelector("body");
 body.append(h1)
+
 
 function getCardCar(arr, cls) {
     const cardCar = document.createElement("div");
@@ -85,5 +86,5 @@ function getCardCar(arr, cls) {
   });
   return cardCar
 }
-body.append(getCardCar(cardCar))
+
 
