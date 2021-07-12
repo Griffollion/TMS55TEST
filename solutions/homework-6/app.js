@@ -50,25 +50,36 @@ console.log(converterObject)
  
 // задание 38
 
-// console.log('Решение задания 38:')  
+console.log('Решение задания 38:')  
 
-// const arrayObj = [
-//     {x: 7, y: 6, z: 5},
-//     {x: 1, y: 0, z: 9},
-//     {x: 17, y: 3, z: 9},
-//     {x: 7, a: 7, b: 5},
-//     {c: 7, y: 6, a: 5},
-// ]
+const arrayObj = [
+    {a:7, y:6, z:5},
+    {x:1, y:7, z:9},
+    {x:17, y:3, z:9},
+    {x:7, a:7, b:5},
+    {c:7, y:6, a:5},
+]
 
-// function calculate(array){
-// //     const sumKeys = array.reduce((sumKey, el) => {
-// //                 
-// // return sumKey
-// // },
-// //      {})
-// //  }
+function calculate(array){
+    const sumKeys = array.reduce((sumKey, key) => {
+        Object.keys(key).forEach((el,i) => {    
+            sumKey[el] = (sumKey[el,i] || 0) + key[el]  
+            // if (!sumKey[el]){ 
+            //     sumKey[el] = Object.values(key)[i]
+            // } else{
+            //     sumKey[el] += Object.values(key)[i]
+            // }
+          
+     })
+     return sumKey
+     },
+     {})
+    return sumKeys
+ }
 
-// console.log(calculate(arrayObj))
+let arrKeys = calculate(arrayObj)
+
+console.log(arrKeys)
 
 // задание 39
 
@@ -83,10 +94,40 @@ const dataGender = [
 ]
 
 function splitIntoGender (data) {
-    let maleArr = data.filter((el) => el.sex == 'male')
-    console.log(maleArr)
-    
-    let femaleArr = data.filter((el) => el.sex == 'female')
-    console.log(femaleArr)
+    let maleArr = data.filter((el) => el.sex.toLowerCase() === 'male')
+    let femaleArr = data.filter((el) => el.sex.toLowerCase() === 'female')
+    return [femaleArr, maleArr]
 }
-splitIntoGender(dataGender)
+let gender =  splitIntoGender(dataGender)
+
+console.log(gender)
+
+// задание 40
+
+console.log('Решение задания 40:')
+
+const newArray = [false, 123, 'String', '', null, 2,78,0, true, 'new string', NaN, undefined, 56, 5, 0, null, 233]
+
+let getCleanArray = (arr) => {
+    let newArr = arr.filter(el => el)
+    return newArr
+}
+let newArr = getCleanArray(newArray)
+console.log(newArr)
+
+// задание 41
+
+console.log('Решение задания 41:')
+const oneArray = [1,2,3,4,5,6,7,8,9,10]
+
+let splitArray = (arr,col) => {
+    let newArr = []
+    for (let i=0; i < arr.length; i += col){
+    newArr.push(arr.slice(i, i+col))
+}
+return newArr
+}
+    
+let newOneArr = splitArray(oneArray,3)
+
+console.log(newOneArr)
