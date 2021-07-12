@@ -89,7 +89,7 @@ let auto = [
 ]
 let bugetCars = auto.filter((el) => el.price <= 10000)
 let middleCars = auto.filter((el) => el.price > 10000 && el.price < 40000)
-let premiumCars = auto.filter((el) => el.price > 40000)
+let premiumCars = auto.filter((el) => el.price >= 40000)
 
 function createCardHTML(arr, cls) {
   let cardContainer = document.createElement('div')
@@ -129,7 +129,7 @@ function createCardHTML(arr, cls) {
     cardContainer.appendChild(card)
     console.log(card)
   })
-  return document.body.append(cardContainer)
+  return cardContainer
 }
 document.body.append(createCardHTML(bugetCars, 'bugetCars'))
 document.body.append(createCardHTML(middleCars, 'middleCars'))
