@@ -67,8 +67,8 @@ const dataCars = [
 ]
 
 let budgetCars = dataCars.filter(element => element.price < 40000)
-let mediumCars = dataCars.filter(element => element.price > 40000 && element.price < 100000)
-let premiumCars = dataCars.filter(element => element.price > 100000)
+let mediumCars = dataCars.filter(element => element.price >= 40000 && element.price < 100000)
+let premiumCars = dataCars.filter(element => element.price >= 100000)
 
 let h1 = document.createElement('h1')
 h1.innerText = 'Объявления о продаже автомобилей'
@@ -77,7 +77,7 @@ const body = document.querySelector('body')
 body.append(h1)
 
 function makeCarsList(arr,css){
-    let section = document.createElement('main')
+    let section = document.createElement('section')
     arr.forEach(element => {
         let card = document.createElement('div')
         card.className = 'card-car'
