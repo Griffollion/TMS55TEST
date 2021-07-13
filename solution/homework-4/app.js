@@ -56,20 +56,28 @@
 // }
 
 // console.log(transformKebabCase());
-// 31; ??????????????????????????????????????????????????
-// let word = "United State"
-// function transformAbbreviation() {
-//   // return word.slice(0,1).toUpperCase()
-//   let changeWord = "";
-//   for (let i = 0; 0 < word.length; i++) 
-//   // changeWord += word[0].toUpperCase;
-//   if (word[i] == " ") {
-//     changeWord += word[i+1].toUpperCase;
-//   }
-//   return changeWord;
-// }
-// transformAbbreviation()
-// console.log(transformAbbreviation());
+// 31;
+// let String = 'Gap big deal'
+// const toUpperCaseSense = String
+//    .split(' ')
+//    .map((word) => {
+//        if(word && word.length)
+//       return word.charAt(0).toUpperCase()
+//    })
+//    .join('.')
+//    console.log(toUpperCaseSense);
+
+// 32.
 
 
-32.
+//33.
+// let fruits = ['apple','apple','banana','apple','lemon','banana']
+
+
+// const calcFruits = fruits.reduce((bag, fruit) => {
+//    bag[fruit] = (bag[fruit] || 0) + 1
+//    return bag
+// }, {})
+// console.log(calcFruits);
+
+//34
