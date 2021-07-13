@@ -1,0 +1,28 @@
+* {
+    margin: 0
+}
+div {
+    text-align: center;
+    align-items: center;
+}
+.photo img{
+    width: 160px;
+}
+
+.cheapСars {
+    margin-bottom: 30px;
+}
+.middleCars {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.middleCars div {
+    border: 1px solid black;
+}
+.premiumCars .price {
+    font-weight: 600;
+    font-size: 30px;
+    color: red;
+}
