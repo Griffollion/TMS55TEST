@@ -1,0 +1,54 @@
+body {
+    width: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    grid-area: auto;
+    margin-bottom: 15px;
+    font-size: 25px;
+    border-color: black;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+.wraper {
+    margin-bottom: 5px;
+    
+}
+
+img {
+    width: 400px;
+    
+    
+}
+
+.luxury{
+    background-color: chocolate;
+    border-style: double;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size:  35px;
+    font-weight: 400;
+}
+.common{
+    background-color: gray;
+    border-style: solid;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size:  30px;
+    font-weight: 400;
+}
+.poor{
+    background-color: rgb(48, 72, 77);
+    border-style: dotted;
+    text-align: center;
+    font-size:  30px;
+    font-weight: 400;
+    
+}
