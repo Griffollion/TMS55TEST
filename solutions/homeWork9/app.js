@@ -4,11 +4,11 @@ function removeActiveClasses(items, clsName) {
     })
 } 
 
-const id = '#first_slider'
-const id1 = '#second__slider'
-const id2 = '#third__slider'
+const id = ('#first_slider .slider__slide')
+const id1 = ('#second__slider .slider__slide')
+const id2 = ('#third__slider .slider__slide')
 
-function getIdName (id) {
+function choiceSlider (id) {
     const slides = document.querySelectorAll(id)
     slides.forEach(slide => {
     slide.addEventListener('click',() => {
@@ -18,6 +18,6 @@ function getIdName (id) {
 })
 }
 
-getIdName(id)
-getIdName(id1)
-getIdName(id2)
+choiceSlider(id)
+choiceSlider(id1)
+choiceSlider(id2)
