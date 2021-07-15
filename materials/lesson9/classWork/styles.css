@@ -1,0 +1,32 @@
+.btn {
+  color: #fff;
+  background-color: #000;
+  min-height: 50px;
+  width: 300px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.container {
+  background-color: green;
+  padding: 50px;
+}
+
+.container-wrapper {
+  background-color: red;
+  padding: 30px;
+}
+
+body {
+  height: 3000px;
+}
+
+.container__item {
+  background-color: seagreen;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #ebebeb;
+  margin-bottom: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
