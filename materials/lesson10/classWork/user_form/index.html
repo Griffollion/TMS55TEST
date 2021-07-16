@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+    <link rel="stylesheet" href="./libs/materialize/css/materialize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="row">
+      <form class="col s12" id="user_form" name="user_form">
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="text" id="name" name="user_name" data-requied="" />
+            <label for="name">Имя</label>
+          </div>
+          <div class="input-field col s6">
+            <input type="number" id="age" name="user_age" />
+            <label for="name">Возраст</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="email" id="email" name="user_email" />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field col s6">
+            <input type="tel" id="phone" name="user_phone" />
+            <label for="phone">Телефон</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="text" id="photo" name="user_photo" />
+            <label for="photo">Ссылка на картинку</label>
+          </div>
+          <div class="input-field col s6">
+            <select>
+              <option value="" disabled selected>Выберите ваш город</option>
+              <option value="1">Минск</option>
+              <option value="2">Брест</option>
+              <option value="3">Гродно</option>
+            </select>
+            <label>Город</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <label>
+              <input name="gender" type="radio" checked />
+              <span>Мужской</span>
+            </label>
+          </div>
+          <div class="input-field col s6">
+            <label>
+              <input name="gender" type="radio" checked />
+              <span>Женский</span>
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <button
+              class="btn waves-effect waves-light"
+              type="submit"
+              name="action"
+            >
+              Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="./libs/materialize/js/materialize.js"></script>
+    <script src="./js/validations.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/user-form.js"></script>
+  </body>
+</html>
