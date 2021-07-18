@@ -1,0 +1,51 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(124, 167, 167);
+  margin-right: 10px;
+}
+.label:last-child {
+  margin-right: 0;
+}
+.field {
+  width: calc(100% / 3);
+  align-items: center;
+  justify-content: center;
+}
+input {
+  width: 250px;
+}
+.btn {
+  width: 200px;
+  height: 35px;
+  color: rgb(53, 161, 161);
+  background-color: rgb(231, 246, 247);
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.realtime {
+  width: 400px;
+  height: 25px;
+  border: rgb(53, 161, 161) solid 1px;
+  margin-right: 25px;
+}
+.row__realtime {
+   display: flex; 
+}
