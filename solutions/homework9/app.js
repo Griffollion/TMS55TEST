@@ -5,11 +5,8 @@ function removeActiveClasses(arr, clsName) {
   })
 }
 
-var idAttr = ['slider1', 'slider2', 'slider3']
-idAttr.forEach((key) => addListeners(key))
-
-function addListeners(key) {
-  var slides = document.querySelectorAll('#' + key + ' > .slider__slide')
+function initSlider(selector) {
+  const slides = document.querySelectorAll(selector)
   slides.forEach((slide) => {
     slide.addEventListener('click', () => {
       removeActiveClasses(slides, 'active')
@@ -17,3 +14,7 @@ function addListeners(key) {
     })
   })
 }
+
+initSlider('#slider1 .slider__slide')
+initSlider('#slider2 .slider__slide')
+initSlider('#slider3 .slider__slide')
