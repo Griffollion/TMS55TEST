@@ -1,0 +1,65 @@
+body{
+    padding: 30px;
+}
+
+
+.form__wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.input__name, .input__pas{
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #bdbdbd;
+    color: #bdbdbd;
+    width: 100%;
+}
+
+.input__btn{
+    color: #fff;
+    border: 1px solid green;
+    background-color: greenyellow;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 11px 26px;
+    max-width: 135px;
+    cursor: pointer;
+}
+
+.div__input-name{
+    margin: 50px 0 10px 0;
+    font-size: 20px;
+}
+
+.div__input-pas{
+    font-size: 20px;
+}
+
+.valid{
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    width: 100%;
+    background-color: rgb(184, 245, 184);
+    border-bottom: 1px solid rgb(46, 179, 46);
+    color: rgb(46, 179, 46)
+}
+
+.invalid{
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    width: 100%;
+    background-color: rgb(235, 173, 173);
+    border-bottom: 1px solid rgb(212, 60, 60);
+    color: rgb(212, 60, 60);
+}
