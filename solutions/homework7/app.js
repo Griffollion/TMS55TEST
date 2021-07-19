@@ -34,11 +34,11 @@ console.log(summTo(100))
 */
 function Calculator() {
   this.read = function () {
-    this.number1 = prompt ('Введите число1');
-    this.number2 = prompt ('Введите число2');
+    this.number1 = +prompt ('Введите число1');
+    this.number2 = +prompt ('Введите число2');
   }
   this.sum = function () {
-    return +this.number1 + +this.number2
+    return this.number1 + this.number2
   }
   this.mul = function () {
     return this.number1 * this.number2
