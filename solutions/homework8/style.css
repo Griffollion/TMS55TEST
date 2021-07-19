@@ -4,16 +4,19 @@ body {
 
 
 .container {
-    display: flex;
-    
+    padding: 40px;
+    background-color: rgba(8, 119, 119, 0.513);
 }
 
 
 .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
+    margin-bottom: 30px;
+    border-radius: 70px;
+    background-color: rgba(171, 173, 13, 0.623);
 }
 
 
@@ -25,7 +28,14 @@ body {
     height: 300px;
     border: 1px solid #e72424;
     border-radius: 15%;
-    margin-bottom: 50px;
+    overflow: hidden;
+    margin-right: 20px;
+    background-color: rgb(98, 98, 98);
+}
+
+
+.card__photo img {
+    width: 550px;
 }
 
 
@@ -34,7 +44,8 @@ body {
     align-items: center;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-right: 20px;
+    color: rgb(1, 56, 156);
 }
 
 
@@ -43,7 +54,8 @@ body {
     align-items: center;
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-right: 20px;
+    color: rgb(170, 37, 152);
 }
 
 
@@ -51,8 +63,9 @@ body {
     display: flex;
     align-items: center;
     font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+    color: rgb(170, 76, 14);
 }
 
 
@@ -61,6 +74,7 @@ body {
     align-items: center;
     font-size: 20px;
     font-weight: 700;
+    color: rgb(136, 3, 3);
 }
 
 

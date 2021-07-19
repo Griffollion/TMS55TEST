@@ -21,40 +21,39 @@ const container = `
 </div>
 `
 
-const card = `
-<div class="card">
-            <div class="card__photo">
-                ${cars.photo}
-            </div>
-            <div class="card__name">
-                ${cars.brand} ${cars.model}
-            </div>
-            <div class="card__release-year">
-                ${cars.releaseYear}
-            </div>
-            <div class="card__fuel-type-engine-volum">
-                ${cars.fuelType} ${cars.engineVolume}
-            </div>
-            <div class="card__price">
-                ${cars.price}
-            </div>
-    </div>
-`
 
-
-
+const body = document.querySelector('body')
+body.insertAdjacentHTML('afterbegin', container)
 
 
 function createHTMLCode (arr) {
-    const firstObject = document.body.insertAdjacentHTML('afterbegin', container)
+
     arr.forEach(el => {
-        document.div.insertAdjacentHTML('beforeend', el)
+        const card = `
+            <div class="card">
+                <div class="card__photo">
+                    <img src="${el.photo}" alt="cars">
+                </div>
+                <div class="card__name">
+                    ${el.brand} ${el.model}
+                </div>
+                <div class="card__release-year">
+                    ${el.releaseYear}
+                </div>
+                <div class="card__fuel-type-engine-volum">
+                    ${el.fuelType} ${el.engineVolume}
+                </div>
+                <div class="card__price">
+                    ${el.price}
+                </div>
+            </div>
+            `
+        document.querySelector('.container').insertAdjacentHTML('beforeend', card)
     })
-    return firstObject
 }
 
 
-createHTMLCode(card)
+createHTMLCode(cars)
 
 
 
