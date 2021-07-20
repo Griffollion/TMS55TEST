@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.form-users {
+  padding: 100px;
+}
+
+.textarea {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea-name {
+  display: inline-block;
+  padding: 5px;
+  border: ridge;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 80px;
+  overflow-x: auto;
+}
+.textarea-password {
+  display: inline-block;
+  padding: 5px;
+  border: ridge;
+  width: 300px;
+  height: 80px;
+  overflow-x: auto;
+}
+
+.invalid {
+  border: crimson 3px solid;
+  font-size: 20px;
+  color: crimson;
+}
+
+.valid {
+  border: darkgreen 3px solid;
+  font-size: 30px;
+  color: blue;
+}
