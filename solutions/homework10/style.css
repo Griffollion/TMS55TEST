@@ -1,0 +1,109 @@
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; 
+    margin-bottom: 40px;
+}
+
+
+.input-name{
+    font-size: 20px;
+    font-weight: 400;
+    color: #101ee0;
+    margin-bottom: 15px;
+    border: none;
+}
+
+
+.input-password{
+    font-size: 20px;
+    font-weight: 400;
+    color: #e40f0f;
+    margin-bottom: 15px;
+    border: none;
+}
+
+
+
+
+
+.button{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #4d73f1;
+    width: 100%;
+    font-size: 15px;
+    padding: 19px 10px 18px 10px;
+    border: none;
+}
+
+
+.div-name {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+
+.div-password {
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
