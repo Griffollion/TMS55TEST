@@ -34,16 +34,16 @@ const form = document.forms['user__form']
 const name = form.user__name
 const pass = form.user__pas
 
-document.querySelector('.input__btn').addEventListener('click', (event) => {
-    event.preventDefault()
-    const copy = document.querySelector('.input__name').value;
-    document.querySelector('.div__input-name').innerHTML = 'Имя: ' + copy
-    validateName(name)
-})
+function checkInputInfo (input, div){
+    document.querySelector('.input__btn').addEventListener('click', (event) => {
+        event.preventDefault()
+        const copy = document.querySelector(input).value;
+        document.querySelector(div).innerHTML = 'Имя: ' + copy
+        validateName(name)
+        validatePass(pass)
+        location.reload()
+    })
+}
 
-document.querySelector('.input__btn').addEventListener('click', (event) => {
-    event.preventDefault()
-    const copy = document.querySelector('.input__pas').value;
-    document.querySelector('.div__input-pas').innerHTML = 'Пароль: ' + copy
-    validatePass(pass)
-})
+checkInputInfo('.input__name', '.div__input-name')
+checkInputInfo('.input__pas', '.div__input-pas')

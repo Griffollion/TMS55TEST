@@ -8,7 +8,7 @@ function validateName (elem) {
 }
 
 function validatePass (elem) {
-    if (elem.value.length > 5) {
+    if (elem.value.length >= 5) {
         elem.classList.add('valid')
     } else {
         elem.classList.add('invalid')
