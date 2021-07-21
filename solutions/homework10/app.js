@@ -23,7 +23,7 @@ function validateNameAndPassword() {
     userPassword.classList.add('invalid')
     userName.classList.add('valid')
     alert('Пароль должен быть более 5 символов')
-  } else if (userName.value = '' && userPassword.value.length >= 5) {
+  } else if (userName.value == '' && userPassword.value.length >= 5) {
       userName.classList.add('invalid')
       userPassword.classList.add('valid')
       alert('Введите имя')
