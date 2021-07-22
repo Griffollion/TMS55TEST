@@ -1,0 +1,33 @@
+body {
+    width: 1220px;
+    margin: 0 auto;
+}
+.cardContainer {
+    width: 1200px;
+    max-width: 100%;
+    display: grid;
+  }
+.card{
+    border: blueviolet solid 1px;
+    text-align: center;
+}
+
+.card img {
+  height: 320px;
+  width: 100%;
+
+}
+
+.adultArray {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 35px;
+    margin-bottom: 15px;
+}
+.childrenArray {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 35px;
+  }
