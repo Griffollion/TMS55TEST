@@ -1,0 +1,95 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.47;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(245, 231, 206);
+}
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+}
+
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.books__card {
+    max-width: 500px;
+    height: 700px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    object-fit: contain;
+    margin: 20px;
+    background-color: cornsilk;
+    transition: box-shadow .35s;
+    transition: transform .35s;
+    transform: scale(1);
+}
+
+.books__card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.35);
+}
+
+.books__foto{
+    object-fit: contain;
+    width: 300px;
+    height: 400px;
+    margin-right: 50px;
+}
+
+.books__info{
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.books__link{
+    display: flex;
+    justify-content: center;
+}
+
+.greetings{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.form__wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.input__name, .input__pas, .input__select{
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #bdbdbd;
+    color: #bdbdbd;
+    width: 100%;
+}
+
+.input__btn{
+    color: #fff;
+    border: 1px solid green;
+    background-color: greenyellow;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 11px 26px;
+    max-width: 135px;
+    cursor: pointer;
+}
