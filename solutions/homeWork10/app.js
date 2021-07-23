@@ -1,11 +1,12 @@
 'use strict'
 
 
-document.querySelector('#inp_name').oninput = ()=>{
-    let name = document.querySelector('#inp_name').value
-    document.querySelector('.div-one').innerHTML = name;
+function enterSomething (from, to){
+document.querySelector(from).oninput = () =>{
+    let target = document.querySelector(from).value
+    document.querySelector(to).innerText = target
 }
-document.querySelector('#inp_password').oninput = ()=>{
-    let password = document.querySelector('#inp_password').value
-    document.querySelector('.div-two').innerHTML = password;
 }
+
+enterSomething('#inp_name', '.div-one')
+enterSomething('#inp_password', '.div-two')
