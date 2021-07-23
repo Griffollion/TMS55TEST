@@ -20,14 +20,14 @@ function makeForm(formName) {
 }
 
 function makeStorageKey(name, value) {
-  localStorage.removeItem(name);
   localStorage.setItem(name, value);
 }
 
 function makeStorageKeysFromForm(event) {
   event.preventDefault();
+  localStorage.clear();
   const form = this.closest("form");
-  for (let item of form) {
+   for (let item of form) {
     if (item.dataset.storage) {
       if (item.value != "") {
         makeStorageKey(item.name, item.value);
