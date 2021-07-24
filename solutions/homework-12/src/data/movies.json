@@ -3,39 +3,81 @@
         "img":"https://abws.bycard.by/uploads/events/thumbs/300x430/5ZdyNlmVF.jpg",
         "title": "Черная Вдова",
         "date": "по 4 августа",
-        "price": "5.00 - 31.00 pуб."
+        "price": "5.00 - 31.00 pуб.",
+        "age": "18",
+        "URL": "https://bycard.by/afisha/minsk/kino/1852"
     },
     {
         "img":"https://abws.bycard.by/uploads/events/thumbs/300x430/6KXE61nt7.jpg",
         "title": "Круэлла",
         "date": "по 29 июля",
-        "price": "6.00 - 31.00 pуб."
+        "price": "6.00 - 31.00 pуб.",
+        "age": "12",
+        "URL": "https://bycard.by/afisha/minsk/kino/1850"
     },
     {
         "img":"https://abws.bycard.by/uploads/events/thumbs/300x430/4Gl69dMt8.jpg",
         "title": "Телохранитель жены киллера",
         "date": "по 29 июля",
-        "price": "6.00 - 31.00 pуб."
+        "price": "6.00 - 31.00 pуб.",
+        "age": "18",
+        "URL": "https://bycard.by/afisha/minsk/kino/2053"
     },
     {
         "img":"https://abws.bycard.by/uploads/events/thumbs/300x430/58Ntzhlyp.jpg",
         "title": "Лука",
         "date": "по 30 июля",
-        "price": "5.50 - 30.00 pуб."
+        "price": "5.50 - 30.00 pуб.",
+        "age": "6",
+        "URL": "https://bycard.by/afisha/minsk/kino/2067"
     },
     {
         "img":"https://abws.bycard.by/uploads/events/thumbs/300x430/2a9597EdV.jpg",
         "title": "Судная ночь навсегда",
         "date": "по 14 августа",
-        "price": "4.00 - 8.00 pуб."
+        "price": "4.00 - 8.00 pуб.",
+        "age": "18",
+        "URL": "https://bycard.by/afisha/minsk/kino/2255"
     },
     {
         "img":"https://abws.bycard.by/uploads/events/thumbs/300x430/7Ws8wduNE.jpg",
         "title": "Космический джем: Новое поколение",
         "date": "по 31 июля",
-        "price": "2.60 - 31.00 pуб."
+        "price": "2.60 - 31.00 pуб.",
+        "age":"6",
+        "URL": "https://bycard.by/afisha/minsk/kino/2199"
+    },
+    {
+        "img":"https://abws.bycard.by/uploads/events/thumbs/300x430/6ZKAvUjEY.jpg",
+        "title": "Унесённые призраками",
+        "date": "по 29 июля",
+        "price": "7.00 - 14.00 pуб.",
+        "age":"12",
+        "URL": "https://bycard.by/afisha/minsk/kino/2320"
+    },
+    {
+        "img":"https://abws.bycard.by/uploads/events/thumbs/300x430/2turnXmsr.jpg",
+        "title": "Королевские каникулы",
+        "date": "по 13 августа",
+        "price": "4.00 - 5.00 pуб.",
+        "age":"6",
+        "URL": "https://bycard.by/afisha/minsk/kino/185"
+    },
+    {
+        "img":"https://abws.bycard.by/uploads/events/thumbs/300x430/5eg09ZkWL.jpg",
+        "title": "Адский ад",
+        "date": "по 29 июля",
+        "price": "5.00 - 16.00 pуб.",
+        "age":"18",
+        "URL": "https://bycard.by/afisha/minsk/kino/2327"
+    },
+    {
+        "img":"https://abws.bycard.by/uploads/events/thumbs/300x430/6AjNdKxdH.jpg",
+        "title": "Белка и Стрелка. Карибская тайна",
+        "date": "по 19 августа",
+        "price": "3.00 - 12.00 pуб.",
+        "age":"6",
+        "URL": "https://bycard.by/afisha/minsk/kino/242"
     }
 ]
-
-
 
