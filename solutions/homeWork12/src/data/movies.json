@@ -1,0 +1,29 @@
+[
+    {
+        "link":"https://bycard.by/afisha/minsk/kino/1852",
+        "picture":"https://abws.bycard.by/uploads/events/thumbs/300x430/5ZdyNlmVF.jpg",
+        "name":"Чёрная Вдова",
+        "date":" по 4 августа",
+        "price":"5.00 - 31.00 руб."
+    },
+    {
+        "link":"https://bycard.by/afisha/minsk/kino/1850",
+        "picture":"https://abws.bycard.by/uploads/events/thumbs/300x430/6KXE61nt7.jpg",
+        "name":"Круэлла",
+        "date":"по 29 июля",
+        "price":"6.00 - 31.00 руб."
+    },
+    {   "link":"https://bycard.by/afisha/minsk/kino/2053",
+        "picture":"https://abws.bycard.by/uploads/events/thumbs/300x430/4Gl69dMt8.jpg",
+        "name":"Телохранитель жены киллера",
+        "date":" по 29 июля",
+        "price":"6.00 - 31.00 руб."
+    },
+    {   "link":"https://bycard.by/afisha/minsk/kino/2067",
+        "picture":"https://abws.bycard.by/uploads/events/thumbs/300x430/58Ntzhlyp.jpg",
+        "name":"Лука",
+        "date":"  по 31 июля",
+        "price":"5.50 - 30.00 руб."
+    }
+
+]
