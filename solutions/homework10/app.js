@@ -16,6 +16,8 @@ userPassword.addEventListener('input', () => {
 
 function validateNameAndPassword() {
   if (userName.value != '' && userPassword.value.length >= 5) {
+    userName.classList.remove('invalid');
+    password.classList.remove('invalid')
     userName.classList.add('valid')
     userPassword.classList.add('valid')
     alert('Форма заполнена правильно')
