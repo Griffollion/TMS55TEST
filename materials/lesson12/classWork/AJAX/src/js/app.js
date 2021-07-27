@@ -69,6 +69,6 @@ async function getDataFromKampykter  ()  {
 }
 
 getDataFromKampykter  ()
-
+    
 
 

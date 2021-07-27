@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'ico-footer';
+  src:
+    url('/solution/homework-12/src/icon-ic/fonts/ico-footer.ttf') format('truetype'),
+    url('/solution/homework-12/src/icon-ic/fonts/ico-footer.woff') format('woff'),
+    url('/solution/homework-12/src/icon-ic/fonts/ico-footer.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ic-"], [class*=" ic-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ico-footer' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-comma:before {
+  content: "\e900";
+}
+.ic-ticket:before {
+  content: "\e939";
+}
+.ic-clock:before {
+  content: "\cc";
+}
