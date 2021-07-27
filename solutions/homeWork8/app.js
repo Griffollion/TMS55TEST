@@ -24,6 +24,18 @@ const cars = [
         carModel: 'Mustang IV',
         carPhoto: 'https://avcdn.av.by/advertbig/0000/3274/3768.jpeg',
         carPriceIn$: 25000
+    },
+    {
+        carBrand: 'Mini',
+        carModel: 'Cooper I',
+        carPhoto: 'https://avcdn.av.by/advertbig/0000/0510/4791.jpeg',
+        carPriceIn$: 3900
+    },
+    {
+        carBrand: 'Bentley',
+        carModel: 'Mulsanne II',
+        carPhoto: 'https://avcdn.av.by/advertbig/0000/1098/5163.jpeg',
+        carPriceIn$: 106000
     }
 ]
 
@@ -32,17 +44,20 @@ const commonCars = cars.filter((el) => el.carPriceIn$ < 40000 && el.carPriceIn$ 
 const poorCars = cars.filter((el) => el.carPriceIn$ <= 10000)
 
 function makeCarsCard(arr, cls) {
-    const list = document.createElement('div');
-    list.classList.add(cls)
-    // list.className = 'wraper'
+    const items = document.createElement('div')
+
+    items.className = 'wraper'
     
     arr.forEach((element) => {
+        const list = document.createElement('div');
+        list.classList.add(cls)
       list.innerHTML += `<div> Brand: ${element.carBrand}</div>`;
       list.innerHTML += `<div> Model: ${element.carModel}</div>`;
       list.innerHTML += `<div> Price: ${element.carPriceIn$}</div>`;
       list.innerHTML += `<img src = '${element.carPhoto}'></img`;
+      items.append(list)
     });
-    return list;
+    return items;
   }
 
 const body = document.querySelector("body");
