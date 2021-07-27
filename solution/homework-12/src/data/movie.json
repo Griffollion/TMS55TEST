@@ -1,0 +1,53 @@
+[
+    {
+        "pic": "https://upload.wikimedia.org/wikipedia/ru/a/a1/Black_Widow_logo.jpg",
+        "name": "Чёрная вдова",
+        "date": "по 4 августа",
+        "price": "4.50-31.00 руб."
+    },
+    {
+        "pic": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/9bb0f260-1c5f-4698-91cc-de481bfd0f55/300x450",
+        "name": "Круэлла",
+        "date": "по 4 августа",
+        "price": "6-31.00 руб."
+    },
+    {
+        "pic": "https://avatars.mds.yandex.net/get-kinopoisk-image/4716873/604a7243-b5b7-4de2-bc10-a0a6a289abb5/600x900",
+        "name": "Лука",
+        "date": "по 4 августа",
+        "price": "4.50-31.00 руб."
+    },
+    {
+        "pic": "https://upload.wikimedia.org/wikipedia/ru/3/32/The_Hobbit._An_Unexpected_Journey.jpg",
+        "name": "Хоббит",
+        "date": "по 20 августа",
+        "price": "9-61.00 руб."
+    },
+    {
+        "pic": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/f56710bd-85c3-49b8-9260-2fa8a3d07c01/600x900",
+        "name": "Мортал Комбат",
+        "date": "по 4 августа",
+        "price": "2.50-37.00 руб."
+    },
+    {
+        "pic": "https://www.vokrug.tv/pic/rutube/13218884.jpg",
+        "name": "Бойцовский клуб",
+        "date": "по 1 августа",
+        "price": "1.50-11.00 руб."
+    },
+    {
+        "pic": "https://upload.wikimedia.org/wikipedia/ru/d/d7/Coco_%282017_film%29_logo.jpg",
+        "name": "Тайна КоКо",
+        "date": "по 24 августа",
+        "price": "14.50-231.00 руб."
+    },
+    {
+        "pic": "https://www.kino-teatr.ru/movie/posters/big/5/140175.jpg",
+        "name": "Телохранитель жены киллера",
+        "date": "по 24 августа",
+        "price": "14.50-231.00 руб."
+    }
+    
+    
+       
+]
