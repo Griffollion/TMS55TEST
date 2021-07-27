@@ -60,14 +60,24 @@ h1 {
   padding: 20px 0px 15px 0px;
 }
 
-.card-date {
+.card-info {
   color: rgb(189, 186, 186);
 }
 
-.card-date:hover {
+.card-info:hover {
   color: black;
+  transition: color 0.5s ease 0.1s;
+}
+
+.card-info:hover .bg-red{
+  color: red;
+  transition: color 0.5s ease;
 }
 
 .mb-5 {
   margin-bottom: 5px;
+}
+
+.mr-5 {
+  margin-right: 5px;
 }

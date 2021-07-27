@@ -14,12 +14,14 @@ function makeCardsList(arr) {
         <div class="card-title">
             ${element.title}
         </div>
-        <div class="card-date">
+        <div class="card-info">
             <div class="mb-5">
-                ${element.date}
+            <span class="ic-icon1 mr-5 bg-red"></span> 
+            <span>${element.date}</span>   
             </div>
             <div>
-                ${element.price}
+            <span class="ic-icon2 mr-5 bg-red"></span>  
+            <span>${element.price}</span>  
             </div>
         </div>
     </a>
