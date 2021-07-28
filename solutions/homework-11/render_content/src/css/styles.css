@@ -1,0 +1,85 @@
+ /* стили инпута */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #e5e5e5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+.user-form {
+  text-align: center;
+}
+.user-name{
+   font-size: 30px;
+}
+
+.user-age{
+    font-size: 30px;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* стили карточек */
+
+.section-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-film {
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.card-film a {
+  text-decoration: none;
+}
+
+.card-film:last-child {
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.card-img img {
+    transition: transform 0.3s ease;
+}
+
+.card-img img:hover{
+    transform: scale(1.1);
+}
+
+.card-title {
+  max-width: 300px;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+  padding: 20px 0px 15px 0px;
+}
+
+  
