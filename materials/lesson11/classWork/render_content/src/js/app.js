@@ -28,7 +28,8 @@ function makeStorageKey(name, value) {
 function makeStorageKeysFromForm(event) {
   event.preventDefault();
   const form = this.closest("form");
-  for (item of form) {
+  console.log(form);
+  for (let item of form) {
     if (item.dataset.storage) {
       if (item.value != "") {
         makeStorageKey(item.name, item.value);
